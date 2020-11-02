@@ -1,3 +1,5 @@
+
+
 # Tout comprendre de Google Analytics et analyser son trafic !
 
 
@@ -261,9 +263,54 @@ Au début il n'y aura aucune données et il faudra attendre quelques jours avant
 
 ### Google Ads
 
-#### Créer un compte 
-
 #### Lier GA à Google Ads
+
+Aller dans Acquisition / Google Ads / Campagnes, puis 'associer vos comptes'.
+
+![](_readme-img/google-analytics/capture-24.PNG)
+
+Les compte Google Ads associés au même compte utilisateur seront listées. Sélectionner les Campagnes à auditer.
+
+![](_readme-img/google-analytics/capture-25.PNG)
+
+Créer un nom pour l'association, activer 'Toutes les données du site web'.
+
+Puis 'Associer les comptes'. Cela prendra 24h avant d'être activé.
+
+![](_readme-img/google-analytics/capture-26.PNG)
+
+### Donner l'accès à d'autres utilisateurs
+
+Permet de donner des accès au compte GA à un collaborateur, un associé, un client, un prestataire...
+
+Il est possible de donner des accès à plusieurs niveaux: Compte, Propriété, Vue.
+
+- Compte: accès à toutes les fonctionnalités, propriétés et vues.
+
+- Propriété: accès à la gestion d'un site en particulier.
+- Vue: permet de sélectionner juste une certaine partie des statistiques visible pour un utilisateur donné. On peut créer plusieurs type vues.
+
+Dans administration.
+
+![](_readme-img/google-analytics/capture-27.PNG)
+
+Quel que soit le niveau choisi, c'est le même schéma.
+
+On peut ajouter un ou plusieurs utilisateurs.
+
+
+
+![](_readme-img/google-analytics/capture-28.PNG)
+
+Ensuite, on peut affiner les droits.
+
+![](_readme-img/google-analytics/capture-29.PNG)
+
+Lorsque l'on donne les droits à un utilisateur, ne pas oublier de le supprimer si celui-ci n'est pas plus habilité à accéder aux données (fin de contrat, départ de collaborateur).
+
+![](_readme-img/google-analytics/capture-30.PNG)
+
+## Comment analyser les données?
 
 ## Liens utiles / sources
 
