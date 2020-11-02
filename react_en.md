@@ -4,6 +4,12 @@
 
 
 
+[React](https://reactjs.org/) is a JavaScript library for building user interfaces. It is the view layer for web applications.
+
+At the heart of all React applications are **components**. A component is a self-contained module that renders some output. We can write interface elements like a button or an input field as a React component. Components are *composable*. A component might include one or more other components in its output.
+
+Broadly speaking, to write React apps we write React components that correspond to various interface elements. We then organize these components inside higher-level components which define the structure of our application.
+
 ## 1. General concepts
 
 ### 1.1 Library vs. Framework
@@ -440,6 +446,8 @@ The `componentWillUnmount` method is called when the component is about to be re
 
 Hooks allow us to write functional React components and still be able to “hook” into all of the `React.Component` functionality, including lifecycle methods.
 
+https://blog.carbonfive.com/replacing-component-lifecycle-methods-with-react-hooks/
+
 ### 1.8 Higher Order Components 
 
 A higher-order component is a function that takes a component and returns a new component. A higher-order component (HOC) is the advanced technique in React.js for reusing a component logic. Higher-Order Components are not part of the React API. They are the pattern that emerges from React’s compositional nature. The component transforms props into UI, and a higher-order component converts a component into another component. The examples of HOCs are Redux’s connect and Relay’s createContainer.
@@ -499,11 +507,49 @@ export default MyHOC(MyComponent);
 
 ### Why use React.Fragment
 
+As the React.js docs state, a common pattern in React is for components to return multiple elements. Usually these elements are wrapped for example inside a div. In most cases the wrapper div is “irrelevant” and is only added because React components require you to return only one element. This kind of behaviour results in useless markup and sometimes even invalid HTML to be rendered, which is bad.
+
 `<React.Fragment></React.Fragment>` or `<></>`: used if we do not begin with html or if we use invalid DOM in JSX: "Fragments let you group a list of children without adding extra nodes to the DOM."
 
-## 3. Library: REDUX
+````react
+render() {
+  return (
+    <>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </>
+  );
+}
+````
+
+### How to render an array as list of items in JSX: The `map()` function
+
+The `map()` function is used to iterate over an array and manipulate or change data items. In React, the `map()` function is most commonly used for rendering a list of data to the DOM. Each child in an array or iterator should have a unique "key" prop.
+
+````react
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((numbers) =>
+  <li key={numbers.toString()}>{numbers}</li>
+);
+
+ReactDOM.render(
+  <ul>{listItems}</ul>,
+  document.getElementById('root')
+);
+````
+
+### How to add new items in an array: spread operator […]
+
+### How to do conditional rendering
+
+## 3. Libraries
+
+### 3.1 REDUX
 
 Redux is a  Predictable State Container for JS Apps.
+
+`npm i react-redux`
 
 ![logo react](_readme-img/react/redux.png)
 
@@ -583,13 +629,23 @@ store.getState();
 
 
 
-## 4. Library: react-router-dom
+### 3.2 Library: react-router-dom
 
 When you need to navigate through a React application with multiple views, you’ll need a router to manage the URLs. React Router takes care of that, keeping your application UI and the URL in sync.
 
-## 5. React Hooks
+`npm i react-router-dom`
 
-## 6. Useful links
+
+
+### 3.3 Library: Axios
+
+`npm i axios --save`
+
+
+
+## 4. React Hooks
+
+## 5. Useful links
 
 - [REACT : 1H POUR COMPRENDRE LA LIBRAIRIE !](https://www.youtube.com/watch?v=no82oluCZag)
 - [NOUVEAUTÉ REACT : UTILISER LES HOOKS !](https://www.youtube.com/watch?v=LuxYWWB3_Qc)
@@ -603,6 +659,20 @@ When you need to navigate through a React application with multiple views, you�
 - [React Virtual DOM Explained in Simple English](https://programmingwithmosh.com/react/react-virtual-dom-explained/)
 - [React lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 - [React Lifecycle Methods – A Deep Dive](https://programmingwithmosh.com/javascript/react-lifecycle-methods/)
-- []()
+- [React Fragments – What, Why, How](https://dev.to/tumee/react-fragments-what-why-how-2kh1)
+- [ReactJS Inverse Data Flow in ES6](https://medium.com/@jtabach/reactjs-inverse-data-flow-in-es6-9d1c3c356be7)
+- [How to Store API Keys and ENV Vars in a create-react-app Project](https://lortza.github.io/2018/05/22/create-react-app-api-keys.html)
 - [Managing your React state with Redux](https://medium.com/the-web-tub/managing-your-react-state-with-redux-affab72de4b1)
+- [How to deploy React App to GitHub Pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+- [Deploying a create-react-app with routing to GitHub pages](https://medium.com/@bennirus/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)
+- [How to Deploy Your React App to Heroku](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae)
+- [React.Component](https://fr.reactjs.org/docs/react-component.html)
+- [React Lifecycle Methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [ReactJS Higher Order Components Tutorial](https://www.codingame.com/playgrounds/8595/reactjs-higher-order-components-tutorial)
+- [React Developer Tools Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+- [React Developer Tools Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+- [Redux Developer Tools Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+- [Redux Developer Tools Firefox](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/)
+- [VSC: Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+- [Using index.js for Fun and Publi](https://alligator.io/react/index-js-public-interfaces/)
 - [Codesandbox](https://codesandbox.io/)
