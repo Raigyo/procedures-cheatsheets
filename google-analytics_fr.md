@@ -349,13 +349,199 @@ Lorsque l'on donne les droits à un utilisateur, ne pas oublier de supprimer cet
 
 **Taux de conversion**: pourcentage de visiteurs ayant fait une conversion. Le taux de conversion sur GA est intimement lié aux objectifs de conversion. En effet, ce taux permet de connaître le pourcentage de visites ayant abouti à une conversion et ce, en lien avec un objectif configuré.
 
+**RGPD / GDPR**: La nouvelle législation européenne RGPD a pour vocation de mieux protéger la vie privée et la confidentialité des citoyens. RGPD signifie Règlement général sur la protection des données et en anglais GDPR pour European General Data Protection Regulation.
+
+Le but est de renforcer la protection de la vie privée du citoyen en édictant des règles uniformes à l'échelle de l'Union européenne : 
+
+- le citoyen dispose d'un meilleur contrôle sur l'utilisation de ses données personnelles
+- le RGPD instaure un cadre légal clair, afin que les entreprises sachent comment s'y prendre pour garantir la confidentialité
+
+Toutes les organisations, les entreprises et les instances publiques qui collectent et traitent les données personnelles de citoyens européens doivent appliquer le RGPD, quel que soit leur pays d'implantation.
+
 ### Comment analyser les données en fonction d'une période donnée?
 
+Lorsqu'on analyse nos données, c'est pour une plage de dates. Il y a toujours une date de début d'analyse et une date d'analyse.
 
+
+
+Par défaut GA nous affiche la dernière semaine, ml est possible de définir sa propre plage de dates.
+
+![capture](_readme-img/googleAnalytics/capture-31.png)
+
+L'on peu ensuite affinner en affichant le graphe par heures / jours / semaines / ou mois.
+
+![capture](_readme-img/googleAnalytics/capture-32.png)
+
+
+
+## Analyser l'audience et acquérir de nouveaux clients
+
+![capture](_readme-img/googleAnalytics/capture-33.png)
+
+
+
+### La vue d'ensemble de notre audience
+
+C'est le rapport par défaut de l'audience reçue par rapport à une plage donnée.
+
+Sur le graphe on peut voir précisément le nombre de visiteurs pour un jour donné.
+
+Le graphe en cammembert à droite montre la proportion de nouveau visiteurs et la proportion de visiteurs qui reviennent.
+
+![capture](_readme-img/googleAnalytics/capture-34.png)
+
+En dessous du graphe se trouvent des données chiffrées. Un rappel des notions s'affiche en info-bulle lorsque l'on passe la souris sur les intitulés.
+
+![capture](_readme-img/googleAnalytics/capture-35.png)
+
+D'autres données sont aussi disponible dans la vue d'ensemble, comme les données démographiques, des informations sur le système utilisé par le visiteur et des informations relative au mobile s'il utilise ce type de système.
+
+![capture](_readme-img/googleAnalytics/capture-36.png)
+
+### Analyser les données démographiques
+
+L'onglet avec les données démographiques permet accéder aux données d'âge et de sexe des visiteurs.
+
+Il faut l'activer. A noter qu'il est important de mettre à jour les conditions d'utilisation du site audité et informer les utilisateurs selon les règles en vigueur, notamment la **GDPR**.
+
+![capture](_readme-img/googleAnalytics/capture-37.png)
+
+
+
+#### Age et sexe
+
+Cela permet de voir le public qui visite le site correspond bien au public ciblé.
+
+![capture](_readme-img/googleAnalytics/capture-38.png)
+
+### Analyser les données géographiques
+
+L'on peut recueillir les données linguistiques et la zone géographique des visiteurs.
+
+#### Données linguistiques
+
+Les données linguistiques correspondent à la langue d'installation du système d'exploitation du visiteur.
+
+Les données ne sont donc pas toujours représentatives car un visiteur peut être par exemple francone mais utiliser un système dans une autre langue (expatrié, depuis une société internationnale où tous les systèmes d'exploitations sont en anglais).
+
+Egalement ces données peuvent attirer l'attention sur certaines annomalies, par exemple de nombreuses visites dans une langues qui ne correspond pas du tout à celle du site, il peut s'agir de bots, des logiciels opérant de manière autonomes et automatiques pa avec de mauvaises intentions (vols de données).  
+
+Les données linguistiques doivent donc être recoupées avec les données de la zone géographique.
+
+Concernant les codes ISO, il s'agit de la langue puis du pays, par exemple:
+
+- fr-fr: français de France
+- fr-be: français de Belgique
+
+- en-gb: anglais du Royaume-Uni
+- en-us: anglais des USA
+
+![capture](_readme-img/googleAnalytics/capture-39.png)
+
+#### Données de la zone géographique
+
+Les données de la zone géographique permettent d'afficher la provenance des visiteurs.
+
+Il est possible de sélectionner une dimension principale: pays, ville, continent ou sous-continent.
+
+Il peut être important de vérifier l'origine des visiteurs car dans certains cas cela peut influencer leur comportement.
+
+Par exemple un site de vente en ligne français qui ne vend pas en dehors de la France, il faudra prendre en compte les visteurs d'autres pays dans l'analyse des taux de conversion, de rebonds...
+
+L'on peu affiner avec d'autres critères faisant partie de la dimension secondaire permettant d'ajouter des filtres.
+
+![capture](_readme-img/googleAnalytics/capture-40.png)
+
+Exemple de données affichées par ville et si oui ou non, la visite provient d'un appareil mobile.
+
+![capture](_readme-img/googleAnalytics/capture-41.png)
+
+### Engagement des visiteurs
+
+#### Visiteurs nouveaux / connus
+
+L'étude des comportements permet de visualiser les visiteurs qui sont nouveaux sur le site et ceux qui sont déjà venus.
+
+Dans les sites d'e-commerce il est important d'avoir un nombre élevé de 'returning visitors'. dans le cas de la générations de 'leads' c'est l'inverse, il est bon d'avoir beaucoup de nouveaux venus.
+
+![capture](_readme-img/googleAnalytics/capture-42.png)
+
+#### Fréquence et récence 
+
+La section fréquence et récence permet de voir le nombre de sessions faites par des utilisateurs et leur récurrence ainsi que le nombre de pages totales visitées (les visites répétées d'un internaute sur une même page sont prises en compte).
+
+Dans l'exemple suivant, 44 utilisateurs n'ont fait qu'une seule session (visite).
+
+Mais 5 utilisateurs ont fait entre 9 et 14 sessions.
+
+![capture](_readme-img/googleAnalytics/capture-43.png)
+
+#### Engagement
+
+##### Segment de durée de la session
+
+L'engagement via 'Segment de durée de la session' permet de voir la durée des différentes sessions et le nombre total de pages vues en fonction des durées.
+
+Dans l'exemple suivant, 23 sessions ont duré 0 à 10 secondes pour un total de 24 pages vues.
+
+Mais, 9 session ont duré plus de 1801 secondes pour un total de 702 pages vues.
+
+![capture](_readme-img/googleAnalytics/capture-44.png)
+
+##### Nombre de pages
+
+Il s'agit du nombre de pages vues en fonction des sessions.
+
+Dans l'exemple suivant, 22 visiteurs n'ont vu qu'une seule page (pour un total de 22 pages vues en toute logique).
+
+Mais, 9 visiteurs ont vu plus de 20 pages, pour un total de pages vues égal à 709.
+
+![capture](_readme-img/googleAnalytics/capture-45.png)
+
+A noter que si la première entrée indique "<1", il s'agit des visiteurs ayant quitté le site avant qu'il soit chargé (parce qu'ils se rendent compte qu'ils se sont trompés, parce que le site est trop lent à charger...). Si le nombre est anormalement élevé il faut en rechercher la cause (par exemple est-ce que le site ne connait pas un problème avec son serveur d'hébergement).
+
+### Technologie utilisée par les visiteurs
+
+#### Navigateurs et OS
+
+Permet de voir quels systèmes les visiteurs utilisent et d'afficher des données techniques: navigateur, système d'exploitation, résolution d'écran, couleurs d'écran...
+
+Ces données sont très importantes pour les développeurs des sites car cela permet de connaître les configurations les plus utilisées et d'adapter leur technologies et leur test pour s'assurer que tout fonctionnera correct dans ces configurations.
+
+![capture](_readme-img/googleAnalytics/capture-46.png)
+
+#### Réseau
+
+Affichait à l'origine les nom du provider du visiteur, voire le nom de l'entreprise d'où provenait la connexion.
+
+Cela est désactivé (not-set), pour rester en concordance avec la GDPR.
+
+![capture](_readme-img/googleAnalytics/capture-47.png)
+
+### Appareils utilisés par nos visiteurs
+
+Cela permet de voir depuis quel type d'appareil l'utilisateur provient.
+
+L'on peut ajouter d'autres filtres via la dimension secondaires.
+
+Il est normal de constater un déclin des tablettes qui ont fait place aux smartphones de grande taille.
+
+![capture](_readme-img/googleAnalytics/capture-48.png)
+
+La vue détaillées (Appareils) permet d'avoir des informations sur les marques et les modèles d'appareils utilisés, mais aussi le système d'exploitation...
+
+Le fournisseur de service est désactivé (not-set), pour rester en concordance avec la GDPR.
+
+Ces données sont très utiles pour les développeurs également car cela permet de mieux cibler les développements.
+
+![capture](_readme-img/googleAnalytics/capture-49.png)
 
 ## Liens utiles / sources
 
 - [Formation Udemy: Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/googleAnalytics-trafic/)
+- [Commission européenne: General Data Protection Regulation (EU GDPR)](https://ec.europa.eu/info/law/law-topic/data-protection_fr)
+- [ISO 3166 - Codes des noms de pays](https://www.iso.org/fr/iso-3166-country-codes.html)
+- [ISO 639 - Codes des langues](https://www.iso.org/fr/iso-639-language-codes.html)
 - [emarketing.fr](https://www.e-marketing.fr/)
 - [Définitions marketing](https://www.definitions-marketing.com/)
 - [anthedesign](https://www.anthedesign.fr/)
