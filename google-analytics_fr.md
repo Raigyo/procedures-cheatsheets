@@ -4,7 +4,7 @@
 
 
 
-![](_readme-img/google-analytics/ga-logo.png)
+![capture](_readme-img/google-analytics/ga-logo.png)
 
 
 
@@ -38,11 +38,11 @@ Menu central: propriété => Informations de suivi => Code de suivi
 
 
 
-![](_readme-img/google-analytics/capture-01.PNG)
+![capture](_readme-img/google-analytics/capture-01.PNG)
 
 Copier la partie encadrée sur **toutes** les pages du site web, dans la balise head, en premier lieu:
 
-![](_readme-img/google-analytics/capture-02.PNG)
+![capture](_readme-img/google-analytics/capture-02.PNG)
 
 ````html
   <head>
@@ -71,13 +71,13 @@ Dans la partie administration du site, sélectionner plugins/extensions => ajout
 
 Dans les mots clés, une recherche sur 'google-analytics'.
 
-Il existe plusieurs plugins. Un des plus performants est celui de [Monster Insights](![](_readme-img/google-analytics/capture-01.PNG)).
+Il existe plusieurs plugins. Un des plus performants est celui de [Monster Insights](![capture](_readme-img/google-analytics/capture-01.PNG)).
 
-![](_readme-img/google-analytics/capture-03.PNG)
+![capture](_readme-img/google-analytics/capture-03.PNG)
 
 Après l'installation il faut l'activer:
 
-![](_readme-img/google-analytics/capture-04.PNG)
+![capture](_readme-img/google-analytics/capture-04.PNG)
 
 Suivre les instructions de l'assistant.
 
@@ -93,19 +93,19 @@ Télécharger le module Google Analytics depuis l'url suivante: https://www.drup
 
 En fonction du choix, encoder l'url ou télécharger le module.
 
-![](_readme-img/google-analytics/capture-09.PNG)
+![capture](_readme-img/google-analytics/capture-09.PNG)
 
 Activer le module.
 
-![](_readme-img/google-analytics/capture-10.PNG)
+![capture](_readme-img/google-analytics/capture-10.PNG)
 
 Dans la page: admin/modules, activer le module en le sélectionnant et en cliquant sur installer.
 
-![](_readme-img/google-analytics/capture-11.PNG)
+![capture](_readme-img/google-analytics/capture-11.PNG)
 
 Dans admin/config, la gestion de GA a été ajoutée.
 
-![](_readme-img/google-analytics/capture-12.PNG)
+![capture](_readme-img/google-analytics/capture-12.PNG)
 
 
 
@@ -119,11 +119,11 @@ Menu central: propriété => Informations de suivi => Code de suivi
 
 Copier le code de suivi:
 
-![](_readme-img/google-analytics/capture-06.PNG)
+![capture](_readme-img/google-analytics/capture-06.PNG)
 
 Coller le code dans Drupal dans la case prévue à cet effet et renseigner l'url du site. Il est possible de tester en local ou d'avoir des sous-domaines.
 
-![](_readme-img/google-analytics/capture-13.PNG)
+![capture](_readme-img/google-analytics/capture-13.PNG)
 
 
 
@@ -131,7 +131,7 @@ En bas de la page à gauche, cliquer sur 'Sauver la configuration'.
 
 Dans admin/config/development/performance, il faudra nettoyer le chahe puis sauver.
 
-![](_readme-img/google-analytics/capture-14.PNG)
+![capture](_readme-img/google-analytics/capture-14.PNG)
 
 ### Intégration de GA sur Prestashop
 
@@ -139,7 +139,7 @@ Installer le module officiel: modules/modules et services => catalogue de module
 
 Il s'agit d'un module développé par Prestashop.
 
-![](_readme-img/google-analytics/capture-05.PNG)
+![capture](_readme-img/google-analytics/capture-05.PNG)
 
 Ensuite: configurer
 
@@ -151,11 +151,11 @@ Menu central: propriété => Informations de suivi => Code de suivi
 
 Copier le code de suivi:
 
-![](_readme-img/google-analytics/capture-06.PNG)
+![capture](_readme-img/google-analytics/capture-06.PNG)
 
 Et copier l'identifiant dans la case "ID de tracking Google Analytics".
 
-![](_readme-img/google-analytics/capture-07.PNG)
+![capture](_readme-img/google-analytics/capture-07.PNG)
 
 Il est recommandé de sélectionner de **rendre les adresses IP anonymes** pour rester en règles avec la GDPR.
 
@@ -169,13 +169,13 @@ Menu central: propriété => Informations de suivi => Code de suivi
 
 Copier le contenu de la partie encadrée:
 
-![](_readme-img/google-analytics/capture-02.PNG)
+![capture](_readme-img/google-analytics/capture-02.PNG)
 
 Dans Shopify aller dans Boutique en ligne => Préférences.
 
 Scroller jusqu'à 'Google Analytics' puis dans le champ 'Compte Google Analytics', copier le code provenant du site GA, puis cliquer sur enregistrer.
 
-![](_readme-img/google-analytics/capture-08.PNG)
+![capture](_readme-img/google-analytics/capture-08.PNG)
 
 ### Vérifier que GA est bien installé
 
@@ -185,7 +185,7 @@ En effet,  GA va repérer que c'est la même machine utilisée et donc ne va pas
 
 Si tout a bien fonctionné, l'on peut apercevoir notre connexion dans la rubrique temps réel / vue d'ensemble:
 
-![](_readme-img/google-analytics/capture-15.PNG)
+![capture](_readme-img/google-analytics/capture-15.PNG)
 
 Si ce n'est pas le cas revoir les procédures d'intégration afin d'identifier ce qui n'a pas fonctionné.
 
@@ -211,13 +211,13 @@ Ne pas oublier le 's' du 'https'. Car l'outil ne va pas convertir.
 
 
 
-![](_readme-img/google-analytics/capture-16.PNG)
+![capture](_readme-img/google-analytics/capture-16.PNG)
 
 Si l'audit se fait sur le même site que celui de GA, la fenêtre suivante devrait apparaître.
 
 Cliquer sur valider la propriété.
 
-![](_readme-img/google-analytics/capture-17.PNG)
+![capture](_readme-img/google-analytics/capture-17.PNG)
 
 Si le site est différent, il sera proposé d'insérer à nouveau du code sur chaque page afin de vérifier que la personne souscrivant au service est bien le propriétaire du site (comme pour GA). Les deux services peuvent être utilisés indépendamment.
 
@@ -231,19 +231,19 @@ Il faut aller dans la partie administration (menu de gauche tout en bas), sélec
 
 Cliquer sur 'Associer la Search Console'.
 
-![](_readme-img/google-analytics/capture-18.PNG)
+![capture](_readme-img/google-analytics/capture-18.PNG)
 
 
 
 Puis cliquer sur 'Ajouter'.
 
-![](_readme-img/google-analytics/capture-19.PNG)
+![capture](_readme-img/google-analytics/capture-19.PNG)
 
 Ensuite sélectionner l'url du site à associer (il pourrait y en avoir plusieurs dans la search console).
 
 Cliquer sur enregistrer et confirmer une nouvelle fois dans le fenêtre modale qui s'ouvre ensuite.
 
-![](_readme-img/google-analytics/capture-20.PNG)
+![capture](_readme-img/google-analytics/capture-20.PNG)
 
 Pour vérifier, retourner dans Administration / Tous les produits.
 
@@ -251,13 +251,13 @@ Search console devrait apparaître en haut. Cliquer sur 'Paramétrer l'associati
 
 La vue devrait être activée.
 
-![](_readme-img/google-analytics/capture-21.PNG)
+![capture](_readme-img/google-analytics/capture-21.PNG)
 
 
 
 Pour vérifier et faire le suivi, depuis le dashboard: Acquisition / Search Console / Pages de destination.
 
-![](_readme-img/google-analytics/capture-22.PNG)
+![capture](_readme-img/google-analytics/capture-22.PNG)
 
 Au début il n'y aura aucune données et il faudra attendre quelques jours avant de les voir apparaitre.
 
@@ -267,17 +267,17 @@ Au début il n'y aura aucune données et il faudra attendre quelques jours avant
 
 Aller dans Acquisition / Google Ads / Campagnes, puis 'associer vos comptes'.
 
-![](_readme-img/google-analytics/capture-24.PNG)
+![capture](_readme-img/google-analytics/capture-24.PNG)
 
 Les compte Google Ads associés au même compte utilisateur seront listées. Sélectionner les Campagnes à auditer.
 
-![](_readme-img/google-analytics/capture-25.PNG)
+![capture](_readme-img/google-analytics/capture-25.PNG)
 
 Créer un nom pour l'association, activer 'Toutes les données du site web'.
 
 Puis 'Associer les comptes'. Cela prendra 24h avant d'être activé.
 
-![](_readme-img/google-analytics/capture-26.PNG)
+![capture](_readme-img/google-analytics/capture-26.PNG)
 
 ### Donner l'accès à d'autres utilisateurs
 
@@ -292,7 +292,7 @@ Il est possible de donner des accès à plusieurs niveaux: Compte, Propriété, 
 
 Dans administration.
 
-![](_readme-img/google-analytics/capture-27.PNG)
+![capture](_readme-img/google-analytics/capture-27.PNG)
 
 Quel que soit le niveau choisi, c'est le même schéma.
 
@@ -300,17 +300,19 @@ On peut ajouter un ou plusieurs utilisateurs.
 
 
 
-![](_readme-img/google-analytics/capture-28.PNG)
+![capture](_readme-img/google-analytics/capture-28.PNG)
 
 Ensuite, on peut affiner les droits.
 
-![](_readme-img/google-analytics/capture-29.PNG)
+![capture](_readme-img/google-analytics/capture-29.PNG)
 
-Lorsque l'on donne les droits à un utilisateur, ne pas oublier de le supprimer si celui-ci n'est pas plus habilité à accéder aux données (fin de contrat, départ de collaborateur).
+Lorsque l'on donne les droits à un utilisateur, ne pas oublier de supprimer cet utilisateur si celui-ci n'est pas plus habilité à accéder aux données (fin de contrat, départ de collaborateur...).
 
-![](_readme-img/google-analytics/capture-30.PNG)
+![capture](_readme-img/google-analytics/capture-30.PNG)
 
 ## Comment analyser les données?
+
+
 
 ## Liens utiles / sources
 
