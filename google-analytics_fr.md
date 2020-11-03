@@ -32,7 +32,7 @@ Menu central: propriété => Informations de suivi => Code de suivi
 
 
 
-![capture](_readme-img/google-analytics/capture-01.png)
+![capture](_readme-img/google-analytics/capture-01.jpg)
 
 Copier la partie encadrée sur **toutes** les pages du site web, dans la balise head, en premier lieu:
 
