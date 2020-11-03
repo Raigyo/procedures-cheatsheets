@@ -8,7 +8,7 @@ September 2020
 
 \* * *
 
-![vuex-logo](_readme-img/vuex-logo.jpeg)
+![vuex-logo](_readme-img/vue/vuex-logo.jpeg)
 
 
 
@@ -52,7 +52,7 @@ Select your options automatic or manual (then select features: eslint, vuex...)
 
 `npm run serve`
 
-![vuex-schema](_readme-img/vue-install.PNG)
+![vuex-schema](_readme-img/vue/vue-install.PNG)
 
 
 
@@ -89,7 +89,7 @@ Vuex is a **state management pattern + library** for Vue.js applications. It ser
 
 VueX is is like Redfux for React but with  special features for Vue.
 
-![vuex-schema](_readme-img/vuex-schema.png)
+![vuex-schema](_readme-img/vue/vuex-schema.png)
 
 - **Getters** will make values able to show statically in our templates. In other words, getters can read the value, but not mutate the state.
 - **Mutations** (dispatched) will allow us to update the state, but they will always be synchronous. Mutations are the only way to change data in the state in the store.
@@ -212,11 +212,11 @@ export default new Vuex.Store({
 })
 ````
 
-![vuex-schema](_readme-img/vue-dev-tool-01.PNG) 
+![vuex-schema](_readme-img/vue/vue-dev-tool-01.PNG) 
 
 
 
-![vuex-schema](_readme-img/vue-dev-tool-02.PNG) 
+![vuex-schema](_readme-img/vue/vue-dev-tool-02.PNG) 
 
 #### Exemple: log errors
 
@@ -253,7 +253,7 @@ export default new Vuex.Store({
 });
 ````
 
-![vuex-schema](_readme-img/vue-dev-tool-03.PNG)
+![vuex-schema](_readme-img/vue/vue-dev-tool-03.PNG)
 
 
 ## Useful links

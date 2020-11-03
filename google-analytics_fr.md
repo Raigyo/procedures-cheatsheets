@@ -1,12 +1,6 @@
-
-
 # Tout comprendre de Google Analytics et analyser son trafic !
 
-
-
 ![capture](_readme-img/google-analytics/ga-logo.png)
-
-
 
 ## Introduction
 
