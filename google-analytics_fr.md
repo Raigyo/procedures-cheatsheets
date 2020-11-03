@@ -30,7 +30,7 @@ Dans le menu de gauche: Administration (icone engrenage)
 
 Menu central: propriété => Informations de suivi => Code de suivi
 
-
+![vuex-logo](_readme-img/vue/vuex-logo.jpeg)
 
 ![capture](_readme-img/google-analytics/capture-01.jpg)
 
