@@ -1,6 +1,16 @@
 # Tout comprendre de Google Analytics et analyser son trafic !
 
+
+
 ![capture](_readme-img/googleAnalytics/ga-logo.png)
+
+
+
+- [ ] Fiche cuisine
+- [ ] Prérequis /nécessaire / conseillé / facultatif
+- [ ] Générer sommaire
+
+
 
 ## Introduction
 
@@ -386,7 +396,7 @@ C'est le rapport par défaut de l'audience reçue par rapport à une plage donn�
 
 Sur le graphe on peut voir précisément le nombre de visiteurs pour un jour donné.
 
-Le graphe en cammembert à droite montre la proportion de nouveau visiteurs et la proportion de visiteurs qui reviennent.
+Le graphe en camembert à droite montre la proportion de nouveau visiteurs et la proportion de visiteurs qui reviennent.
 
 ![capture](_readme-img/googleAnalytics/capture-34.png)
 
@@ -535,6 +545,100 @@ Le fournisseur de service est désactivé (not-set), pour rester en concordance 
 Ces données sont très utiles pour les développeurs également car cela permet de mieux cibler les développements.
 
 ![capture](_readme-img/googleAnalytics/capture-49.png)
+
+
+
+## Comparer les différents canaux d'acquisition de trafic
+
+### Vue d'ensemble des canaux d'acquisition
+
+Comment arrive notre audience sur notre site?
+
+Les principaux canaux sont listés sur le camembert:
+
+- Organic search: les moteurs de recherche
+- Direct: via favoris ou en tapant l'url directement
+- Referal: ce qui vient d'un autre site via un lien (sponsorisé ou non)
+- Social: via les réseaux sociaux
+- Email: via des emailing avec trackers (campagnes)
+
+Il est conseillé d'équilibrer les canaux d'acquisition. En effet un site qui par exemple ne tablerait que sur la recherche organique et qui pour certaines raisons se verrait désindexé perdrait dès lors tout son trafic.
+
+Il faut donc tâcher de ne pas dépasser les 50% pour la recherche organique et investir dans différents canaux.
+
+
+
+![capture](_readme-img/googleAnalytics/capture-50.png)
+
+### Impact des réseaux sociaux sur notre trafic
+
+Dans la sections "Canaux" sont affichés les canaux d'acquisition par types:
+
+
+
+![capture](_readme-img/googleAnalytics/capture-51.png)
+
+A noter que GA n'affichera que les canaux qui ont été utilisés lors de la période sélectionnée.
+
+On peut voir par exemple dans "Social" les différents médias sociaux et évaluer l'impact et l'efficacité des différentes campagnes organisées sur ceux-ci.
+
+![capture](_readme-img/googleAnalytics/capture-52.png)
+
+### Où en est notre optimisation de notre référencement naturel (SEO)?
+
+![capture](_readme-img/googleAnalytics/capture-53.png)
+
+Dans cette vue on peut voir la liste des différents moteurs de recherche utilisés.
+
+Google étant le plus utilisé, il est important de la voir apparaître en premier, sinon cela veut dire que le site n'a pas été optimisé au niveau SEO.
+
+![capture](_readme-img/googleAnalytics/capture-54.png)
+
+Pour avoir des données plus poussées, il faudra se rendre dans la "Search console".
+
+On pourra y trouver les nombre de fois où le site a été affiché dans google suite à certaines requêtes.
+
+- Clicks: le nombre de clicks vers le site suite à une recherche
+
+- Impressions: le nombre de fois que le site est apparu dans Google suite à une recherche (mais sans qu'il y ait nécessairement de click)
+- CRT: Taux de clics = Clics/Impressions * 100.
+- Position moyenne: Il s'agit du classement moyen des URL du site pour les requêtes. 
+
+![capture](_readme-img/googleAnalytics/capture-55.png)
+
+On peut avoir aussi le détail par pages du site dans la rubrique "Pages de destination".
+
+![capture](_readme-img/googleAnalytics/capture-56.png)
+
+
+
+### Quels sites nous amènent du trafic?
+
+![capture](_readme-img/googleAnalytics/capture-57.png)
+
+Cela permet de voir quels sont les sites qui proposent un lien vers notre site.
+
+Cela peut être utile pour créer des campagnes et des partenariats avec les sites qui ont des visiteurs qui pourraient également être intéressés par nos services.
+
+![capture](_readme-img/googleAnalytics/capture-58.png)
+
+### Liens directs
+
+![capture](_readme-img/googleAnalytics/capture-59.png)
+
+Il s'agit des utilisateurs qui ont directement tapé l'url dans la barre de recherche ou qui ont mis le site en favoris.
+
+Ces données sont plus difficiles à analyser et il faut les recouper avec d'autres informations. Par exemple pour un site de commerce en ligne, peut-être que les visiteurs sont des habituées et on l'adresse du site en favori.
+
+### Analyser l'impact des campagnes publicitaires avec Google Ads
+
+Permet de vérifier l'efficacité des campagnes Google Ads et d'ajuster sa stratégie en fonction de sa rentabilité en terme d'acquisitions.
+
+![capture](_readme-img/googleAnalytics/capture-60.png)
+
+## Analyser le comportement pour améliorer l'expérience utilisateur
+
+
 
 ## Liens utiles / sources
 
