@@ -1,3 +1,5 @@
+
+
 # Tout comprendre de Google Analytics et analyser son trafic !
 
 
@@ -881,6 +883,99 @@ Ou partagés par email :
 On peut choisir la fréquence d'envoi automatique, le jour de l'envoi, le format (pdf, excel)...
 
 On peut programmer l'envoi depuis n'importe quelle vue, y compris depuis le tableau de bord personnalisé, ce qui permet d'envoyer des données qui ont été sélectionnées pour leur représentativité, aux collègues, management, clients...
+
+## Suivi d'événements, objectifs et taux de conversion
+
+### La notion d'événement
+
+Les événements sont toutes les actions de l'utilisateur pouvant être trackés.
+
+Un code pour tracker un événement requiert une série de données : 
+
+- Catégorie (obligatoire) est le nom que vous donnez à un groupe d'objets que vous souhaitez suivre.
+- Action (obligatoire) est le type d'interaction, comme le téléchargement d'un document, un formulaire complété...
+- L'étiquette (facultative) est utile pour résumer l'objet de l'événement, comme les clics sur les options du menu de navigation. il est plus que conseillé de l'utiliser pour mieux s'y retrouver.
+- La valeur (facultative) peut être utilisée si vous souhaitez attribuer une valeur numérique à votre téléchargement de fichier.
+
+Exemple à insérer dans le code html :
+
+````
+<a href="lien de mon fichier" onclick="gtag('event', 'action de mon événement', {'event_category': 'catégorie de mon événement', 'event_label': 'label de mon événement'});">ancre de mon lien</a>
+````
+
+En pratique (exemple) :
+
+````
+<a href="https://guersanguillaume.com/wp-content/uploads/2018/04/SEMrush-Certification-for-Social-Media-Marketers.pdf" onclick="gtag('event', 'clic', {'event_category': 'telechargement', 'event_label': 'tarifs2020'});">tarifs</a>
+````
+
+Pour les CMS (Prestashop, Wordpress...) il existe des extensions permettant d'effectuer le suivi.
+
+
+
+### Vérifier qu'un événement est bien suivi
+
+Pour vérifier qu'un événement est bien pris en compte, aller dans "temps réel" / "événements".
+
+On peut y voir les actions et leurs libellés.  s'assurer que tous les trackings d'événements fonctionnent, il faut les tesmanuellement.
+
+![capture](_readme-img/googleAnalytics/capture-93.png)
+
+
+
+### Paramétrer des objectifs pour suivre son taux de conversion
+
+Les événements crées vont servir à configurer des objectifs qui permettront de calculer le taux de conversion de notre site.
+
+Il faut aller dans administration / objectifs.
+
+![capture](_readme-img/googleAnalytics/capture-94.png)
+
+Puis "Nouvel objectif" :
+
+![capture](_readme-img/googleAnalytics/capture-95.png)
+
+
+
+On peut choisir un modèle car par exemple on peut avoir pour objectif qu'une page déterminée du site ait été vue.
+
+Pour des objectifs de tracking il faut choisir : "Configuration de l'objectif : personnalisée".
+
+Il faudra nommer l'objectif (c'est le nom qu'il aura dans GA) et sélectionner événement.
+
+![capture](_readme-img/googleAnalytics/capture-96.png)
+
+
+
+Pour l'étape suivante, il va falloir reprendre très précisément les données reprises sur les tags.
+
+Il faut bien entendu adapter le contenu qui sera encodé avec celui utilisé sur le site.
+
+Ci dessous un exemple :
+
+````
+onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});"
+````
+
+Catégorie = event_category soit : to email
+
+Action = 'clic' soit : clic
+
+Libellé = event_label soit : open-mailbox
+
+![capture](_readme-img/googleAnalytics/capture-97.png)
+
+
+
+![capture](_readme-img/googleAnalytics/capture-98.png)
+
+
+
+TO do : vérifier que les objectifs et le tracking d'événements fonctionne
+
+
+
+
 
 ## Liens utiles / sources
 
