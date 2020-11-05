@@ -319,47 +319,51 @@ Lorsque l'on donne les droits à un utilisateur, ne pas oublier de supprimer cet
 
 - L'audience: quel est le profil de nos visiteurs?
 - Comparer les différents canaux d'acquisition de trafic
-- Analyser le comportement pour améliorer l'expéreince utilisateur
+- Analyser le comportement pour améliorer l'expérience utilisateur
 
 ### Glossaire et définitions
 
-**Engagement / taux d'engagement**: L'engagement en marketing dépend de plusieurs paramètres, il correspond à une notion qui désigne les prédispositions du consommateur à interagir avec un élément marketing ou une marque. Internet favorise grandement les interactions entre les consommateurs et les marques, on compte ainsi différentes formes d'engagements de la part des internautes. Le client potentiel peut s'engager suite à la réception d'un message publicitaire visuel, d'une newsletter, d'un e-mail, directement auprès de la marque ou via les réseaux sociaux par exemple. Les professionnels mesurent ensuite le taux d'engagement. On peut considérer qu'il existe plusieurs niveaux d'engagement : l'engagement simple, qui dénote un intérêt pour une marque, l'engagement pour l'achat, qui entraîne le consommateur à se renseigner davantage sur un produit spécifique et l'engagement viral qui concerne les consommateurs satisfaits, communiquant volontiers sur leurs marques favorites. L'engagement permet à la fois de fidéliser la clientèle, d'accroître la notoriété et d'échanger plus facilement avec les consommateurs.
+**KPI (Key Performance Indicator)** : Pour savoir si votre site fonctionne bien, il est nécessaire de faire plus que simplement surveiller vos ventes. D’autres paramètres, appelés KPI (*fr*: indicateurs clés de performance), sont aussi importants quand il s’agit d’évaluer le succès ou la performance d'un site. Disons-le haut et fort : il est même impossible de déterminer le succès d’une page sans utiliser ces valeurs parfaitement mesurables.
 
-**Session**: une session représente la visite d'un internaute (utilisateur) sur votre site web. La session englobe toutes l'activité que l'internaute effectue sur notre site et cette activité est limitée dans le temps. Après 30 minutes d'inactivité, la session prend fin. Si l'utilisateur reprend son activité après ces 30 minutes, cela sera considéré comme une seconde session. Un utilisateur peut donc avoir plusieurs sessions.
+Mais chaque paramètre doit-il être pris en compte de manière très détaillée ? Il n’y a pas de réponse universelle à cela. Les KPI à surveiller sont aussi dépendants de l’objectif de votre site. GA propose des KPI prédéfinis répartis en différentes catégories : temps réel, audience, acquisition, comportement et conversions.
 
-**Utilisateur**: un utilisateur est un internaute qui utilise notre site web. Ce dernier peut être assimilé à plusieurs sessions s'il a été inactif plus de 30 minutes. Un utilisateurs utilisant des appareils différents pour se connecter au site sera considéré comme plusieurs utilisateurs différents.
+**Engagement / taux d'engagement **: L'engagement en marketing dépend de plusieurs paramètres, il correspond à une notion qui désigne les prédispositions du consommateur à interagir avec un élément marketing ou une marque. Internet favorise grandement les interactions entre les consommateurs et les marques, on compte ainsi différentes formes d'engagements de la part des internautes. Le client potentiel peut s'engager suite à la réception d'un message publicitaire visuel, d'une newsletter, d'un e-mail, directement auprès de la marque ou via les réseaux sociaux par exemple. Les professionnels mesurent ensuite le taux d'engagement. On peut considérer qu'il existe plusieurs niveaux d'engagement : l'engagement simple, qui dénote un intérêt pour une marque, l'engagement pour l'achat, qui entraîne le consommateur à se renseigner davantage sur un produit spécifique et l'engagement viral qui concerne les consommateurs satisfaits, communiquant volontiers sur leurs marques favorites. L'engagement permet à la fois de fidéliser la clientèle, d'accroître la notoriété et d'échanger plus facilement avec les consommateurs.
 
-**Page vue**: une page vue représente le nombre de fouis qu'un visiteur a vu une page spécifique. Cela ne veut pas dire qu'il a vu toute la page ou qu'il l'a concidérée avec intérêt, mais qu'elle a été gée dans le navigateur. Ainsi le nombre de pages vues représentera le nombre total de pages consultées sur notre site web. Si une même page est vue deux fois, cela sera considéré comme deux pages vues.
+**Session **: une session représente la visite d'un internaute (utilisateur) sur votre site web. La session englobe toutes l'activité que l'internaute effectue sur notre site et cette activité est limitée dans le temps. Après 30 minutes d'inactivité, la session prend fin. Si l'utilisateur reprend son activité après ces 30 minutes, cela sera considéré comme une seconde session. Un utilisateur peut donc avoir plusieurs sessions.
 
-**Page par session**: une page par session représente le nombre moyen de pages vues au cours d'une même session. Ainsi, si  utilisateur visite notre site web et consulte plusieurs pages différentes, il s'agira du nombre de pages par session. Sur GA, on retrouve donc une moyenne deges visitées par session, et ce, par tous les utilisateurs.
+**Utilisateur **: un utilisateur est un internaute qui utilise notre site web. Ce dernier peut être assimilé à plusieurs sessions s'il a été inactif plus de 30 minutes. Un utilisateurs utilisant des appareils différents pour se connecter au site sera considéré comme plusieurs utilisateurs différents.
 
-**Durée moyenne des sessions**: une session représente la période pendant laquelle un utilisateur est actif sur un site web. Ainsi la durée moyenne des sessions donne une idée du temps passé par session en moyenne sur notre site web. Permet de mesurer le taux d'engagement (engagement Rate).
+**Page vue** : une page vue représente le nombre de fouis qu'un visiteur a vu une page spécifique. Cela ne veut pas dire qu'il a vu toute la page ou qu'il l'a considérée avec intérêt, mais qu'elle a été générée dans le navigateur. Ainsi le nombre de pages vues représentera le nombre total de pages consultées sur notre site web. Si une même page est vue deux fois, cela sera considéré comme deux pages vues.
 
-**% de nouvelles sessions**: le pourcentage de nouvelles sessions représente le pourcentage des nouvelles visites sur notre site, des utilisateurs qui le consultent pour la première fois. De cette manière l'on peut déterminer si l'on attire des utilisateurs qui visitent notre site web pour la première fois ou, si à l'inverse l'on attire des utilisateurs qui ont déjà visité notre site et y reviennent.
+**Page par session** : une page par session représente le nombre moyen de pages vues au cours d'une même session. Ainsi, si  utilisateur visite notre site web et consulte plusieurs pages différentes, il s'agira du nombre de pages par session. Sur GA, on retrouve donc une moyenne des pages visitées par session, et ce, par tous les utilisateurs.
 
-**Taux de rebond**:  le taux de rebond représente le pourcentage de visites pendant lesquelles l'utilisateur a quitté le site web dès sa page d'arrivée, sans même interagir avec la page en question (bien que l'utilisateur ait peut-être lu toute la page). Ce n'est pas alarmant car il est normal qu'un utilisateur constate qu'il n'est pas sur un site qui correspond à sa recherche et s'en aille. Cependant si un taux de rebond est élevé, c'est préoccupant. Cela signifie que la page en question pourrait peut-être être améliorée ou encore, que la campagne qui a mené l'utilisateur sur cette page n'était pas assez claire.
+**Durée moyenne des sessions** : une session représente la période pendant laquelle un utilisateur est actif sur un site web. Ainsi la durée moyenne des sessions donne une idée du temps passé par session en moyenne sur notre site web. Permet de mesurer le taux d'engagement (engagement Rate).
 
-**Canaux**: les canaux d'acquisition sont les sources du trafic de notre site (moteur de recherche, référencement naturel...). En les analysant, nous pouvons les regrouper par segments d'activités marketing: trafic provenant des réseaux sociaux, du SEO, emailing, campagnes publicitaires...
+**% de nouvelles sessions **: le pourcentage de nouvelles sessions représente le pourcentage des nouvelles visites sur notre site, des utilisateurs qui le consultent pour la première fois. De cette manière l'on peut déterminer si l'on attire des utilisateurs qui visitent notre site web pour la première fois ou, si à l'inverse l'on attire des utilisateurs qui ont déjà visité notre site et y reviennent.
 
-**Trafic organique**: le trafic organique est celui provenant des résultats naturels des moteurs de recherche comme Google, Bing, Yahoo... Ces résultats sont liés au référencement naturel SEO de notre site.
+**Taux de rebond** :  le taux de rebond représente le pourcentage de visites pendant lesquelles l'utilisateur a quitté le site web dès sa page d'arrivée, sans même interagir avec la page en question (bien que l'utilisateur ait peut-être lu toute la page). Ce n'est pas alarmant car il est normal qu'un utilisateur constate qu'il n'est pas sur un site qui correspond à sa recherche et s'en aille. Cependant si un taux de rebond est élevé, c'est préoccupant. Cela signifie que la page en question pourrait peut-être être améliorée ou encore, que la campagne qui a mené l'utilisateur sur cette page n'était pas assez claire.
 
-**SEO / Référencement nature**l:  SEO est l'acronyme de Search Engine Optimization et peut être défini comme l'art de positionner un site, une page web ou une application dans les premiers résultats naturels des moteurs de recherche. En français, le SEO est désigné par le terme de référencement naturel. Sur les requêtes visées, la position obtenue se doit essentiellement d'être en première page, car lors de la majeure partie des requêtes, c'est la seule page consultée. Désormais, il peut même s'agir d'obtenir la position zéro. La position zéro est un résultat de recherche positionné devant le premier résultat naturel sur Google. Elle est matérialisée par un bloc contenant les éléments d’une page web répondant à une question posée, on parle d’ « extrait optimisé ou featured snippet  ». La position zéro permet donc à Google de répondre directement à une question posée par un internaute, le plus souvent lors d’une recherche vocale effectuée sur Smartphone. Les termes position #0 ou ranking #0 désignent également une position zéro.
+**Canaux** : les canaux d'acquisition sont les sources du trafic de notre site (moteur de recherche, référencement naturel...). En les analysant, nous pouvons les regrouper par segments d'activités marketing: trafic provenant des réseaux sociaux, du SEO, emailing, campagnes publicitaires...
 
-**Trafic référent**: le trafic référent est celui qui provient d'autres sites internets qui ne sont pas des réseaux sociaux (autres sites, blogs qui parlent de notre site et fournissent son lien).
+**Trafic organique** : le trafic organique est celui provenant des résultats naturels des moteurs de recherche comme Google, Bing, Yahoo... Ces résultats sont liés au référencement naturel SEO de notre site.
 
-**Trafic social**: le trafic social est celui provenant des réseaux sociaux (Facebook, Twitter, Instagram, linkedIn, Pinterest) et qui n'est pas associé à une publicité, c'est un trafic organique. Il peut cependant être organisé avec la collaboration d'influenceurs. Il permet de voir quel réseau social nous envoie le plus de visiteurs.
+**SEO / Référencement nature**l :  SEO est l'acronyme de Search Engine Optimization et peut être défini comme l'art de positionner un site, une page web ou une application dans les premiers résultats naturels des moteurs de recherche. En français, le SEO est désigné par le terme de référencement naturel. Sur les requêtes visées, la position obtenue se doit essentiellement d'être en première page, car lors de la majeure partie des requêtes, c'est la seule page consultée. Désormais, il peut même s'agir d'obtenir la position zéro. La position zéro est un résultat de recherche positionné devant le premier résultat naturel sur Google. Elle est matérialisée par un bloc contenant les éléments d’une page web répondant à une question posée, on parle d’ « extrait optimisé ou featured snippet  ». La position zéro permet donc à Google de répondre directement à une question posée par un internaute, le plus souvent lors d’une recherche vocale effectuée sur Smartphone. Les termes position #0 ou ranking #0 désignent également une position zéro.
 
-**Trafic payant / paid trafic**:  le trafic payé est celui obtenu via le réseau de recherche Google Ads, Bing Ads ou d'autres moteurs de recherche au moyen d'une campagne de coûts par clic (CPC). Cela inclus également les campagnes marketingpublicitaires payantes sur les réseaux sociaux.
+**Trafic référent** : le trafic référent est celui qui provient d'autres sites internet qui ne sont pas des réseaux sociaux (autres sites, blogs qui parlent de notre site et fournissent son lien).
 
-**Trafic direct**: le trafic direct est celui de toutes les sessions qui proviennent d'un utilisateur qui a saisi l'adresse de notre site directement dans la barre de recherche de son navigateur ou qui l'a placé dans sa sections 'favoris'. Il s'agit souvent d'internautes récurrents qui connaissent bien notre site.
+**Trafic social** : le trafic social est celui provenant des réseaux sociaux (Facebook, Twitter, Instagram, linkedIn, Pinterest) et qui n'est pas associé à une publicité, c'est un trafic organique. Il peut cependant être organisé avec la collaboration d'influenceurs. Il permet de voir quel réseau social nous envoie le plus de visiteurs.
 
-**Événements**: les événements représentent les interactions d'un utilisateur avec un contenu. Il existe plusieurs types d'actions ou d'interactions que l'on peut suivre tels que les téléchargements, les lectures vidéo, les clics sur une annonce, remplir un formulaire, etc.
+**Trafic payant / paid trafic** :  le trafic payé est celui obtenu via le réseau de recherche Google Ads, Bing Ads ou d'autres moteurs de recherche au moyen d'une campagne de coûts par clic (CPC). Cela inclus également les campagnes marketing publicitaires payantes sur les réseaux sociaux.
 
-**Conversion**:  une conversion représente une action réalisée en ligne ou hors ligne et qui est primordiale pour atteindre les objectifs de l'entreprise. il s'agit par exemple d'un achat dans la boutique, une demande de formulaire de devis... Mais cela peut être plus pointu, comme fidéliser le visiteur à un service en démonstartion de façon récurrente et prolongée.
+**Trafic direct** : le trafic direct est celui de toutes les sessions qui proviennent d'un utilisateur qui a saisi l'adresse de notre site directement dans la barre de recherche de son navigateur ou qui l'a placé dans sa sections 'favoris'. Il s'agit souvent d'internautes récurrents qui connaissent bien notre site.
 
-**Taux de conversion**: pourcentage de visiteurs ayant fait une conversion. Le taux de conversion sur GA est intimement lié aux objectifs de conversion. En effet, ce taux permet de connaître le pourcentage de visites ayant abouti à une conversion et ce, en lien avec un objectif configuré.
+**Événements** : les événements représentent les interactions d'un utilisateur avec un contenu. Il existe plusieurs types d'actions ou d'interactions que l'on peut suivre tels que les téléchargements, les lectures vidéo, les clics sur une annonce, remplir un formulaire, etc.
 
-**RGPD / GDPR**: La nouvelle législation européenne RGPD a pour vocation de mieux protéger la vie privée et la confidentialité des citoyens. RGPD signifie Règlement général sur la protection des données et en anglais GDPR pour European General Data Protection Regulation.
+**Conversion** :  une conversion représente une action réalisée en ligne ou hors ligne et qui est primordiale pour atteindre les objectifs de l'entreprise. il s'agit par exemple d'un achat dans la boutique, une demande de formulaire de devis... Mais cela peut être plus pointu, comme fidéliser le visiteur à un service en démonstration de façon récurrente et prolongée.
+
+**Taux de conversion** : pourcentage de visiteurs ayant fait une conversion. Le taux de conversion sur GA est intimement lié aux objectifs de conversion. En effet, ce taux permet de connaître le pourcentage de visites ayant abouti à une conversion et ce, en lien avec un objectif configuré.
+
+**RGPD / GDPR** : La nouvelle législation européenne RGPD a pour vocation de mieux protéger la vie privée et la confidentialité des citoyens. RGPD signifie Règlement général sur la protection des données et en anglais GDPR pour European General Data Protection Regulation.
 
 Le but est de renforcer la protection de la vie privée du citoyen en édictant des règles uniformes à l'échelle de l'Union européenne : 
 
@@ -638,17 +642,262 @@ Permet de vérifier l'efficacité des campagnes Google Ads et d'ajuster sa strat
 
 ## Analyser le comportement pour améliorer l'expérience utilisateur
 
+### Contenu du site : quelles sont les pages les plus populaires
 
+Il est possible ans la rubrique "comportement" d'afficher des statistiques pour les pages les plus populaires du site.
+
+![capture](_readme-img/googleAnalytics/capture-61.png)
+
+
+
+Les pages de destinations sont les pages sur lesquelles les visiteurs arrivent.
+
+![capture](_readme-img/googleAnalytics/capture-62.png)
+
+Et les pages de sortie les pages depuis lesquelles les utilisateurs ont quitté le site.
+
+Cela peut être un indicateur des pages dont le contenu devrait peut-être être amélioré.
+
+![capture](_readme-img/googleAnalytics/capture-63.png)
+
+### Vitesse du site : comprendre quelles sont les pages lentes de notre site
+
+**Il est très important de veiller à la rapidité d'affichage d'un site et de toutes ses pages car c'est très important pour le taux de conversion et pour le SEO.**
+
+Ce rapport ne prend en compte qu'1% du trafic ce qui peu expliquer des chutes dans le rapport ou l'absence de données.
+
+Il est possible de modifier ce pourcentage en modifiant le code sur les pages HTML.
+
+```
+// Avec gtag.js, comme montré dans le chapitre sur l'intégration
+gtag('config', 'UA-XXXXX-Y', {'siteSpeedSampleRate':100}); // 100% samplerate
+
+// Avec analytics.js
+ga('create', 'UA-XXXX-Y', {'siteSpeedSampleRate': 100}); // 100% samplerate
+
+```
+
+Egalement il s'agit d'un calcul fait sur base d'un échantillon de pages vues.
+
+Le temps de chargement indique le chargement total de la page. Dans les faits l'utilisateur peut donc avoir déjà accès au contenu avant.
+
+![capture](_readme-img/googleAnalytics/capture-64.png)
+
+Il y a un classement par navigateur, ce qui peut donner des indications aux développeurs sur ce qu'il y aurait lieu d'optimiser.
+
+![capture](_readme-img/googleAnalytics/capture-65.png)
+
+Dans la rubrique "temps de chargement des pages", on peut avoir accès aux données pour chaque page du site. Cela permet de repérer les pages qui seraient plus lentes au chargement.
+
+NB: un slash (/) tout seul représente la page index / "splash page".
+
+![capture](_readme-img/googleAnalytics/capture-66.png)
+
+La rubrique 'suggestions relatives à la vitesse' permet d'afficher la liste des pages les plus lentes et propose des pistes de solutions lorsqu'on clique sur les liens via une analyse via un autre outil externe de Google : [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=fr).
+
+![capture](_readme-img/googleAnalytics/capture-67.png)
+
+Pour la rubrique 'temps utilisateur', si elle est vide cela peut être dû au fait qu'il n'y a pas assez de visites.
+
+![capture](_readme-img/googleAnalytics/capture-68.png)
+
+L'on peut cependant modifier le script inséré au début de chaque page pour avoir des données plus représentatives.
+
+```
+// Avec gtag.js, comme montré dans le chapitre sur l'intégration
+gtag('event', 'timing_complete', {
+  'name' : 'load',
+  'value' : 3549,
+  'event_category' : 'JS Dependencies'
+});
+
+// Avec analytics.js
+ga('send', {
+  hitType: 'timing',
+  timingCategory: 'JS Dependencies',
+  timingVar: 'load',
+  timingValue: 3549
+});
+```
+
+**Pour les développeurs** : pour des données plus précises et plus adaptées à l'optimisation des pages - notamment la vitesse de chargement, les développeurs utiliseront des outils comme [Lighthouse](https://developers.google.com/web/tools/lighthouse) (extension du navigateur) ou accéderont directement à [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=fr) afin d'optimiser les pages du site lors du développement.
+
+### Site Search : trouver des opportunités avec notre moteur de recherche interne
+
+Cette rubrique concerne les sites ayant un **moteur de recherche interne**. Cette fonctionnalité est indispensable sur les sites de commerce en ligne par exemple.
+
+L'on peut voir le nombre de visites ayant occasionné une recherche, le nombre de recherches uniques...
+
+![capture](_readme-img/googleAnalytics/capture-69.png)
+
+Dans la partie "utilisation", on aura une vue d'ensemble des visites ayant occasionné une recherche.
+
+S'il y a peu de recherches effectuées sur le site, peut-être est-ce parce que la barre de recherche est mal placée, peu ergonomique...
+
+![capture](_readme-img/googleAnalytics/capture-70.png)
+
+Dans la partie "termes de recherche", l'on aura une liste des termes utilisés par les utilisateurs dans notre moteur de recherches.
+
+Très utile par exemple dans le cadre d'une boutique en ligne pour commander des produits que l'on n'aurait pas en catalogue mais qui seraient recherchés par les visiteurs. Cela peut aussi donner des idées d'ajout de contenu, par exemple sur un site institutionnel, de services ou une encyclopédie en ligne, s'il n'y a pas de rubrique correspondant aux questions / recherches des utilisateurs.
+
+![capture](_readme-img/googleAnalytics/capture-71.png)
+
+### Évènements : analyser les actions de nos visiteurs
+
+Dans cette rubrique l'on peut faire un suivi de tous les événements que l'on a créés, par exemple : ajout d'un produits dans le panier, remplir un formulaire, télécharger un document...
+
+### Flux de comportement : analyser le parcours de nos visiteurs
+
+Il s'agit, toujours pour une période donnée, d'une représentation graphique du parcours des visiteurs sur notre site.
+
+Cela permet de comprendre comment ils sont arrivés sur notre site, comment ils voyagent dessus et avoir une vue instantanée du taux de rebond.
+
+
+
+![capture](_readme-img/googleAnalytics/capture-74.png)
+
+## Tableau de bord et rapports email
+
+### Créer un tableau de bord
+
+Plutôt que d'avoir le tableau de bord par défaut, il est possible de personnaliser son propre tableau de bord avec les données souhaitées.
+
+Il est même possible de créer plusieurs tableaux de bords.
+
+
+
+![capture](_readme-img/googleAnalytics/capture-75.png)
+
+
+
+![capture](_readme-img/googleAnalytics/capture-76.png)
+
+
+
+On va ensuite pouvoir ajouter des widgets.
+
+Pour les statistiques :
+
+- Statistiques : données chiffrées
+- Chronologie : graphiques sur un laps de temps donné
+- Geo Map : données géographiques
+- Tableaux
+- Diagrammes (camemberts)
+- Barres
+
+Pour les données en temps réel (utile pour les très gros sites) 
+
+- Compteur
+- Ligne du temps
+- Geo Map : données géographiques
+- Tableaux
+
+![capture](_readme-img/googleAnalytics/capture-77.png)
+
+On peut pour chaque widget, définir quelle statistique l'on veut afficher ainsi que lui affecter des filtres.
+
+Par exemple pour ajouter une widget avec les sessions :
+
+![capture](_readme-img/googleAnalytics/capture-78.png)
+
+
+
+Puis enregistrer et cela donnera une nouvelle carte sur le tableau de bord personnalisé :
+
+![capture](_readme-img/googleAnalytics/capture-79.png)
+
+Il est possible de modifier le widget en cliquant sur le petit crayon en haut à droite de la carte.
+
+Autres exemple avec l'ajout d'une chronologie :
+
+![capture](_readme-img/googleAnalytics/capture-80.png)
+
+
+
+Ce qui donnera :
+
+![capture](_readme-img/googleAnalytics/capture-81.png)
+
+Exemple pour afficher les pages les plus populaires :
+
+![capture](_readme-img/googleAnalytics/capture-84.png)
+
+
+
+Un dernier exemple pour ajouter la durée des visites :
+
+![capture](_readme-img/googleAnalytics/capture-85.png)
+
+
+
+Résultat avec les quatre widgets ajoutés :
+
+![capture](_readme-img/googleAnalytics/capture-86.png)
+
+
+
+Il est possible de déplacer les cartes sur le dashboard en cliquant au dessus de celle-ci (lorsque le curseur se transforme en croix de déplacement).
+
+![capture](_readme-img/googleAnalytics/capture-82.png)
+
+L'on peut aussi choisir une disposition préconfigurée en sélectionnant "Personnaliser le tableau de bord".
+
+![capture](_readme-img/googleAnalytics/capture-83.png)
+
+### Comparer les données entre deux périodes
+
+Par défaut les vues affichent une période donnée.
+
+Mais il est possible de comparer deux périodes et ce dans toutes les vues. Il suffit de cocher "Comparer à" dans le sélecteur de dates.
+
+Cela permet de comparer les données en fonction des mois, de certaines périodes et entrer dans une analyse approfondie.
+
+![capture](_readme-img/go"ogleAnalytics/capture-87.png)
+
+
+
+![capture](_readme-img/googleAnalytics/capture-88.png)
+
+
+
+### Envoyer des rapports par email
+
+Il est possible d'**enregistrer** les rapports dans l'interface en leur donnant un nom :
+
+![capture](_readme-img/googleAnalytics/capture-89.png)
+
+Pour les retrouver :
+
+![capture](_readme-img/googleAnalytics/capture-91.png)
+
+Les rapports peuvent être **exportés** dans différents formats :
+
+![capture](_readme-img/googleAnalytics/capture-90.png)
+
+Ou partagés par email : 
+
+![capture](_readme-img/googleAnalytics/capture-92.png)
+
+On peut choisir la fréquence d'envoi automatique, le jour de l'envoi, le format (pdf, excel)...
+
+On peut programmer l'envoi depuis n'importe quelle vue, y compris depuis le tableau de bord personnalisé, ce qui permet d'envoyer des données qui ont été sélectionnées pour leur représentativité, aux collègues, management, clients...
 
 ## Liens utiles / sources
 
 - [Formation Udemy: Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/googleAnalytics-trafic/)
 - [Commission européenne: General Data Protection Regulation (EU GDPR)](https://ec.europa.eu/info/law/law-topic/data-protection_fr)
+- [Google Analytics : les 10 KPI indispensables](https://fr.ryte.com/magazine/google-analytics-voici-les-10-kpi-les-plus-importants-pour-ton-site-web)
 - [ISO 3166 - Codes des noms de pays](https://www.iso.org/fr/iso-3166-country-codes.html)
 - [ISO 639 - Codes des langues](https://www.iso.org/fr/iso-639-language-codes.html)
 - [emarketing.fr](https://www.e-marketing.fr/)
 - [Définitions marketing](https://www.definitions-marketing.com/)
 - [anthedesign](https://www.anthedesign.fr/)
+- [Lighthouse | Tools for Web Developers | Google Developers](https://developers.google.com/web/tools/lighthouse)
+- [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/?hl=fr)
+- [Google Analytics - analytics.js - Site Speed Sample Rate](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#siteSpeedSampleRate)
+- [Google Analytics - gtag.js - Site Speed (Page Timing) sample rate increase](https://support.google.com/analytics/thread/7741119?hl=en)
+- [Google Analytics - analytics.js - User Timings](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings)
+- [Google Analytics - gtag.js - User Timings](https://developers.google.com/analytics/devguides/collection/gtagjs/user-timings)
 
 
 
