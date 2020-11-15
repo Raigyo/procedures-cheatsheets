@@ -8,10 +8,93 @@
 
 
 
-- [ ] Fiche cuisine
-- [ ] Prérequis /nécessaire / conseillé / facultatif
-- [ ] Générer sommaire
+```markdown
+| Project: Google Analytics Overview  |  Document type: Procedure | Author: Vincent Chilot |  Last revision: 15/11/2020 |   
+```
 
+
+
+Cette procédure aide à avoir une vue d'ensemble sur l'interface de Google Analytics (GA) et à implémenter le suivi analytique dans les services web.
+
+Cette procédure est une synthèse de la formation "[Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/google-analytics-trafic/)" par Guillaume Guersan, consultant Freelance en Marketing Digital.
+
+Cette procédure s'adresse à des personnes ayant des connaissances : 
+
+- en développement pour l'implémentation dans les services web
+- en marketing pour analyser les résultats et adapter des stratégies
+
+**Prérequis nécessaire** : posséder un compte Google, la présente procédure indiquera la marche à suivre pour créer un compte Google Analytics et Google search Console.
+
+**Conseillé** : posséder un site ou un service ou pourra être implémenté GA / un site ayant déjà GA implémenté.
+
+**Facultatif** : posséder un compte Google Ads.
+
+## Table des matières
+
+  * [Introduction](#introduction)
+    + [Pourquoi utiliser Google Analytics (GA) ?](#pourquoi-utiliser-google-analytics--ga---)
+    + [Pour qui est fait GA?](#pour-qui-est-fait-ga-)
+  * [Créer son compte et intégrer son site](#cr-er-son-compte-et-int-grer-son-site)
+    + [Créer son compte](#cr-er-son-compte)
+    + [Intégration de GA sur son application web HTML](#int-gration-de-ga-sur-son-application-web-html)
+    + [Intégration de GA dans Wordpress](#int-gration-de-ga-dans-wordpress)
+    + [Intégration de GA dans Drupal](#int-gration-de-ga-dans-drupal)
+    + [Intégration de GA sur Prestashop](#int-gration-de-ga-sur-prestashop)
+    + [Intégration de GA sur Shopify](#int-gration-de-ga-sur-shopify)
+    + [Vérifier que GA est bien installé](#v-rifier-que-ga-est-bien-install-)
+  * [Lier GA à d'autres comptes](#lier-ga---d-autres-comptes)
+    + [Google Search Console](#google-search-console)
+      - [Créer un compte](#cr-er-un-compte)
+      - [Lier GA à Google Search Console](#lier-ga---google-search-console)
+    + [Google Ads](#google-ads)
+      - [Lier GA à Google Ads](#lier-ga---google-ads)
+    + [Donner l'accès à d'autres utilisateurs](#donner-l-acc-s---d-autres-utilisateurs)
+  * [Comment analyser les données?](#comment-analyser-les-donn-es-)
+    + [Quelles sont les types de données qu'il est possible d'analyser?](#quelles-sont-les-types-de-donn-es-qu-il-est-possible-d-analyser-)
+    + [Glossaire et définitions](#glossaire-et-d-finitions)
+    + [Comment analyser les données en fonction d'une période donnée?](#comment-analyser-les-donn-es-en-fonction-d-une-p-riode-donn-e-)
+  * [Analyser l'audience et acquérir de nouveaux clients](#analyser-l-audience-et-acqu-rir-de-nouveaux-clients)
+    + [La vue d'ensemble de notre audience](#la-vue-d-ensemble-de-notre-audience)
+    + [Analyser les données démographiques](#analyser-les-donn-es-d-mographiques)
+      - [Age et sexe](#age-et-sexe)
+    + [Analyser les données géographiques](#analyser-les-donn-es-g-ographiques)
+      - [Données linguistiques](#donn-es-linguistiques)
+      - [Données de la zone géographique](#donn-es-de-la-zone-g-ographique)
+    + [Engagement des visiteurs](#engagement-des-visiteurs)
+      - [Visiteurs nouveaux / connus](#visiteurs-nouveaux---connus)
+      - [Fréquence et récence](#fr-quence-et-r-cence)
+      - [Engagement](#engagement)
+        * [Segment de durée de la session](#segment-de-dur-e-de-la-session)
+        * [Nombre de pages](#nombre-de-pages)
+    + [Technologie utilisée par les visiteurs](#technologie-utilis-e-par-les-visiteurs)
+      - [Navigateurs et OS](#navigateurs-et-os)
+      - [Réseau](#r-seau)
+    + [Appareils utilisés par nos visiteurs](#appareils-utilis-s-par-nos-visiteurs)
+  * [Comparer les différents canaux d'acquisition de trafic](#comparer-les-diff-rents-canaux-d-acquisition-de-trafic)
+    + [Vue d'ensemble des canaux d'acquisition](#vue-d-ensemble-des-canaux-d-acquisition)
+    + [Impact des réseaux sociaux sur notre trafic](#impact-des-r-seaux-sociaux-sur-notre-trafic)
+    + [Où en est notre optimisation de notre référencement naturel (SEO)?](#o--en-est-notre-optimisation-de-notre-r-f-rencement-naturel--seo--)
+    + [Quels sites nous amènent du trafic?](#quels-sites-nous-am-nent-du-trafic-)
+    + [Liens directs](#liens-directs)
+    + [Analyser l'impact des campagnes publicitaires avec Google Ads](#analyser-l-impact-des-campagnes-publicitaires-avec-google-ads)
+  * [Analyser le comportement pour améliorer l'expérience utilisateur](#analyser-le-comportement-pour-am-liorer-l-exp-rience-utilisateur)
+    + [Contenu du site : quelles sont les pages les plus populaires](#contenu-du-site---quelles-sont-les-pages-les-plus-populaires)
+    + [Vitesse du site : comprendre quelles sont les pages lentes de notre site](#vitesse-du-site---comprendre-quelles-sont-les-pages-lentes-de-notre-site)
+    + [Site Search : trouver des opportunités avec notre moteur de recherche interne](#site-search---trouver-des-opportunit-s-avec-notre-moteur-de-recherche-interne)
+    + [Évènements : analyser les actions de nos visiteurs](#-v-nements---analyser-les-actions-de-nos-visiteurs)
+    + [Flux de comportement : analyser le parcours de nos visiteurs](#flux-de-comportement---analyser-le-parcours-de-nos-visiteurs)
+  * [Tableau de bord et rapports email](#tableau-de-bord-et-rapports-email)
+    + [Créer un tableau de bord](#cr-er-un-tableau-de-bord)
+    + [Comparer les données entre deux périodes](#comparer-les-donn-es-entre-deux-p-riodes)
+    + [Envoyer des rapports par email](#envoyer-des-rapports-par-email)
+  * [Suivi d'événements, objectifs et taux de conversion](#suivi-d--v-nements--objectifs-et-taux-de-conversion)
+    + [La notion d'événement](#la-notion-d--v-nement)
+    + [Vérifier qu'un événement est bien suivi](#v-rifier-qu-un--v-nement-est-bien-suivi)
+    + [Paramétrer des objectifs pour suivre son taux de conversion](#param-trer-des-objectifs-pour-suivre-son-taux-de-conversion)
+    + [Analyse des conversions](#analyse-des-conversions)
+  * [Liens utiles / sources](#liens-utiles---sources)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## Introduction
@@ -74,7 +157,7 @@ Peut se faire facilement via une extension.
 
 Dans la partie administration du site, sélectionner plugins/extensions => ajouter.
 
-Dans les mots clés, une recherche sur 'googleAnalytics'.
+Dans les mots clés, une recherche sur 'google analytics'.
 
 Il existe plusieurs plugins. Un des plus performants est celui de [Monster Insights](![capture](_readme-img/googleAnalytics/capture-01.png)).
 
@@ -92,7 +175,7 @@ Pour des raisons évidentes, le plugin ne fonctionnera pas en local. Certaines f
 
 ### Intégration de GA dans Drupal
 
-Dans l'interface d'admin de Drupal, allez sur Extensions/Extend => Ajouter nouvelle extension (module).
+Dans l'interface d'admin de Drupal, allez sur Extensions / Extend => Ajouter nouvelle extension (module).
 
 Télécharger le module Google Analytics depuis l'url suivante: https://www.drupal.org/project/google_analytics ou copier l'url de téléchargement.
 
@@ -364,6 +447,8 @@ Mais chaque paramètre doit-il être pris en compte de manière très détaillé
 **Conversion** :  une conversion représente une action réalisée en ligne ou hors ligne et qui est primordiale pour atteindre les objectifs de l'entreprise. il s'agit par exemple d'un achat dans la boutique, une demande de formulaire de devis... Mais cela peut être plus pointu, comme fidéliser le visiteur à un service en démonstration de façon récurrente et prolongée.
 
 **Taux de conversion** : pourcentage de visiteurs ayant fait une conversion. Le taux de conversion sur GA est intimement lié aux objectifs de conversion. En effet, ce taux permet de connaître le pourcentage de visites ayant abouti à une conversion et ce, en lien avec un objectif configuré.
+
+**Entonnoir de conversion / conversion funnel** : correspond au parcours entrepris par un prospect sur vos réseaux digitaux, et le menant à un objectif précis, défini par vos soins.
 
 **RGPD / GDPR** : La nouvelle législation européenne RGPD a pour vocation de mieux protéger la vie privée et la confidentialité des citoyens. RGPD signifie Règlement général sur la protection des données et en anglais GDPR pour European General Data Protection Regulation.
 
@@ -748,6 +833,22 @@ Très utile par exemple dans le cadre d'une boutique en ligne pour commander des
 
 Dans cette rubrique l'on peut faire un suivi de tous les événements que l'on a créés, par exemple : ajout d'un produits dans le panier, remplir un formulaire, télécharger un document...
 
+![capture](_readme-img/googleAnalytics/capture-72.png)
+
+
+
+L'entrée "pages" permet de voir depuis quelles pages ont été générés les événements.
+
+![capture](_readme-img/googleAnalytics/capture-73.png)
+
+
+
+"Flux d'événements" permet de voir en un coup d'oeil l'intérêt des internautes pour les éléments interactifs du site.
+
+![capture](_readme-img/googleAnalytics/capture-73-2.png)
+
+
+
 ### Flux de comportement : analyser le parcours de nos visiteurs
 
 Il s'agit, toujours pour une période donnée, d'une représentation graphique du parcours des visiteurs sur notre site.
@@ -917,7 +1018,7 @@ Pour les CMS (Prestashop, Wordpress...) il existe des extensions permettant d'ef
 
 Pour vérifier qu'un événement est bien pris en compte, aller dans "temps réel" / "événements".
 
-On peut y voir les actions et leurs libellés.  s'assurer que tous les trackings d'événements fonctionnent, il faut les tesmanuellement.
+On peut y voir les actions et leurs libellés.  s'assurer que tous les trackings d'événements fonctionnent, il faut les tester manuellement.
 
 ![capture](_readme-img/googleAnalytics/capture-93.png)
 
@@ -971,15 +1072,47 @@ Libellé = event_label soit : open-mailbox
 
 
 
-TO do : vérifier que les objectifs et le tracking d'événements fonctionne
+### Analyse des conversions
+
+Dans cette rubrique il est possible de visualiser les différentes conversion en fonction des objectifs définis et ce que ces conversions ont potentiellement rapporté.
+
+![capture](_readme-img/googleAnalytics/capture-99.png)
 
 
+
+"URL des objectifs" permet de voir depuis quelles pages les objectifs ont été réalisés.
+
+ ![capture](_readme-img/googleAnalytics/capture-100.png)
+
+
+
+"Chemin de navigation vers l'objectif", comme son nom l'indique, permet de connaître le chemin parcouru sur le site par l'utilisateur avant de réaliser un objectif.
+
+ ![capture](_readme-img/googleAnalytics/capture-101.png)
+
+"Schéma de l'entonnoir de conversion" : un entonnoir est un chemin de navigation (succession de pages Web) que vous souhaitez voir suivi par vos visiteurs afin d’atteindre un objectifs du site.
+
+ ![capture](_readme-img/googleAnalytics/capture-102.png)
+
+Chaque objectif peut être analysé séparément, et l'on peut voir combien de sessions ont été nécessaire pour accomplir l'objectif..
+
+ ![capture](_readme-img/googleAnalytics/capture-103.png)
+
+Le rapport "Flux de l'objectif" permet d'identifier si le chemin parcouru par le trafic est interrompu à l'une des étapes de l'entonnoir de conversion.
+
+Les entonnoirs de conversion peuvent être créés lors de la création d'objectifs. Ce réglage permet de voir exactement combien de personnes se déplacent à chaque étape du processus de conversion. Ce processus correspond à un ensemble de pages que vous définissez comme des étapes nécessaires pour arriver à l'URL de votre objectif.
+
+ ![capture](_readme-img/googleAnalytics/capture-104.png)
+
+Créer cet entonnoir vous permet de savoir combien de personnes abandonnent chaque étape afin que vous sachiez quelles pages doivent être corrigées ou optimisées. Par exemple, vous pouvez créer un entonnoir de conversion de commerce électronique pour voir combien de personnes se déplacent entre le panier et la page de paiement.
+
+Note: Les entonnoirs de conversion ne fonctionnent vraiment **que lorsque vous demandez à vos visiteurs de parcourir une série de pages précises et que ceux-ci sont bien guidés**. Sauf indication contraire, les visiteurs suivent rarement un chemin clair sur votre site et un entonnoir de conversion ne vous aidera pas à comprendre comment vos visiteurs se déplacent d'une page à l'autre. Pour les chemins avec moins de structure, utilisez le rapport "**Flux de comportements**".
 
 
 
 ## Liens utiles / sources
 
-- [Formation Udemy: Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/googleAnalytics-trafic/)
+- [Formation Udemy: Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/google-analytics-trafic/)
 - [Commission européenne: General Data Protection Regulation (EU GDPR)](https://ec.europa.eu/info/law/law-topic/data-protection_fr)
 - [Google Analytics : les 10 KPI indispensables](https://fr.ryte.com/magazine/google-analytics-voici-les-10-kpi-les-plus-importants-pour-ton-site-web)
 - [ISO 3166 - Codes des noms de pays](https://www.iso.org/fr/iso-3166-country-codes.html)
@@ -987,12 +1120,20 @@ TO do : vérifier que les objectifs et le tracking d'événements fonctionne
 - [emarketing.fr](https://www.e-marketing.fr/)
 - [Définitions marketing](https://www.definitions-marketing.com/)
 - [anthedesign](https://www.anthedesign.fr/)
+- [Qu’est-ce qu’un funnel de conversion ?](https://www.ideagency.fr/blog/entonnoir-conversion)
+- [Comment configurer vos objectifs dans Google Analytics](https://digitad.ca/creer-objectif-google-analytics/) 
 - [Lighthouse | Tools for Web Developers | Google Developers](https://developers.google.com/web/tools/lighthouse)
 - [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/?hl=fr)
 - [Google Analytics - analytics.js - Site Speed Sample Rate](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#siteSpeedSampleRate)
 - [Google Analytics - gtag.js - Site Speed (Page Timing) sample rate increase](https://support.google.com/analytics/thread/7741119?hl=en)
 - [Google Analytics - analytics.js - User Timings](https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings)
 - [Google Analytics - gtag.js - User Timings](https://developers.google.com/analytics/devguides/collection/gtagjs/user-timings)
+
+
+
+-----
+
+
 
 
 
