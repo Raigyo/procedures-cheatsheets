@@ -30,10 +30,10 @@ We will cover theses concepts:
 
 ## Table of content
 
-- [SASS & SCSS: overview](#sass---scss--overview)
+- [SASS & SCSS: overview](#sass-scss-overview)
   * [What is SASS?](#what-is-sass-)
-    + [SASS: Syntacticaly Awesome Style Sheets ('.sass')](#sass--syntacticaly-awesome-style-sheets---sass--)
-    + [SCSS: Sassy Cascading Style Sheets ('.scss')](#scss--sassy-cascading-style-sheets---scss--)
+    + [SASS: Syntacticaly Awesome Style Sheets ('.sass')](#sass-syntacticaly-awesome-style-sheets-sass-)
+    + [SCSS: Sassy Cascading Style Sheets ('.scss')](#scss-sassy-cascading-style-sheets-scss-)
   * [Why using Sass?](#why-using-sass-)
   * [How to install?](#how-to-install-)
     + [Installation of SASS preprocessor:](#installation-of-sass-preprocessor-)
@@ -44,21 +44,21 @@ We will cover theses concepts:
     + [Variables](#variables)
       - [Operations with variables:](#operations-with-variables-)
     + [Nesting](#nesting)
-    + [Current Selector '&' (= parent name )](#current-selector--------parent-name--)
+    + [Current Selector '&' (= parent name )](#current-selector-parent-name-)
     + [Importation](#importation)
-    + [Inheritance and bloc of properties / Placeholders](#inheritance-and-bloc-of-properties---placeholders)
-    + [Mixins & includes](#mixins---includes)
+    + [Inheritance and bloc of properties / Placeholders](#inheritance-and-bloc-of-properties-placeholders)
+    + [Mixins & includes](#mixins-includes)
     + [Functions](#functions)
       - [Built-in modules](#built-in-modules)
-      - [Create functions (@function)](#create-functions---function-)
-    + [Conditions (@if, @else if, @else)](#conditions---if---else-if---else-)
-    + [Loops (@for, @each, @while)](#loops---for---each---while-)
+      - [Create functions (@function)](#create-functions-function-)
+    + [Conditions (@if, @else if, @else)](#conditions-if-else-if-else-)
+    + [Loops (@for, @each, @while)](#loops-for-each-while-)
     + [Lists](#lists)
       - [Function nth](#function-nth)
-      - [Add a value to a list (append)](#add-a-value-to-a-list--append-)
+      - [Add a value to a list (append)](#add-a-value-to-a-list-append-)
       - [Maps](#maps)
     + [@at-root](#-at-root)
-  * [Tips / mistakes to avoid](#tips---mistakes-to-avoid)
+  * [Tips / mistakes to avoid](#tips-mistakes-to-avoid)
   * [Useful links](#useful-links)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -76,12 +76,12 @@ Sass is a preprocessor for CSS. It has been developped using Ruby.
 With Sass you can expend the possibilities of CSS.
 
 There are two ways to use Sass: **sass files** or **scss files**.
-<a href="sass--syntacticaly-awesome-style-sheets---sass--"></a>
+<a href="sass-syntacticaly-awesome-style-sheets-sass-"></a>
 ### SASS: Syntacticaly Awesome Style Sheets ('.sass')
 
 - concise syntax: no curly braces '{}' or semicolons ';'
 - more easy to read
-<a href="scss--sassy-cascading-style-sheets---scss--"></a>
+<a href="scss-sassy-cascading-style-sheets-scss-"></a>
 ### SCSS: Sassy Cascading Style Sheets ('.scss')
 
 - written like CSS
@@ -118,7 +118,7 @@ I use it with WSL.
 
 - Install Ruby: `sudo apt-get install ruby-full`
 - Install SASS (a 'gem' in Ruby): `sudo gem install sass`
-- Test: `sass --version`
+- Test: `sass -version`
 - Or you can install it using [scout-app.io](scout-app.io)
 (but it's more easy to use it with the terminal)
 <a href="activate-sass-"></a>
@@ -131,7 +131,7 @@ Sass will create the rendered css in 'css/default.css'. It will also add 'defaul
 <a href="automatic-processing-watch-"></a>
 ### Automatic processing/watch:
 
-- `sass --watch sass/default.scss:css/default.css` (use relative path)
+- `sass -watch sass/default.scss:css/default.css` (use relative path)
 
 Otherwise you will have to relaunch the command `sass sass/default.scss css/default.css`
 to regenerate the '.scss' file.
@@ -201,7 +201,7 @@ footer {
 => factorise
 
 => don't abuse of nesting
-<a href="current-selector--------parent-name--"></a>
+<a href="current-selector-parent-name-"></a>
 ### Current Selector '&' (= parent name )
 
 Exemple with CSS:
@@ -266,7 +266,7 @@ body {
 
 Of course we have to import it after the variables declaration
 so you could use variable in the children SCSS...
-<a href="inheritance-and-bloc-of-properties---placeholders"></a>
+<a href="inheritance-and-bloc-of-properties-placeholders"></a>
 ### Inheritance and bloc of properties / Placeholders
 
 We can declare a *bloc of properties* using Sass. For that we use '%'.
@@ -344,7 +344,7 @@ SCSS:
 => **Inheritance is managed in SCSS**!
 
 => If a bloc of properties is not called in a class, it's not rendered by Sass.
-<a href="mixins---includes"></a>
+<a href="mixins-includes"></a>
 ### Mixins & includes
 
 A Mixin is a block of code that lets us group CSS declarations we may reuse throughout our site.
@@ -431,7 +431,7 @@ Mixin generate properties, functions generate results.
 See [SASS Built-In Modules](https://sass-lang.com/documentation/modules).
 
 Before creating a new function, check if it already exists in SASS.
-<a href="create-functions---function-"></a>
+<a href="create-functions-function-"></a>
 #### Create functions (@function)
 
 Exemple:
@@ -446,7 +446,7 @@ footer {
 }
 
 ```
-<a href="conditions---if---else-if---else-"></a>
+<a href="conditions-if-else-if-else-"></a>
 ### Conditions (@if, @else if, @else)
 
 ```
@@ -491,7 +491,7 @@ body {
     @extend %theme;
 }
 ```
-<a href="loops---for---each---while-"></a>
+<a href="loops-for-each-while-"></a>
 ### Loops (@for, @each, @while)
 
 **@for**
@@ -622,7 +622,7 @@ footer {
 ```
 
 => For once, with lists in SASS **index begins at 1**!!!!!!!!
-<a href="add-a-value-to-a-list--append-"></a>
+<a href="add-a-value-to-a-list-append-"></a>
 #### Add a value to a list (append)
 
 ```
@@ -737,7 +737,7 @@ Will render in CSS:
   background-color: #555;
 }
 ```
-<a href="tips---mistakes-to-avoid"></a>
+<a href="tips-mistakes-to-avoid"></a>
 ## Tips / mistakes to avoid
 
 - Use modules and structure sass architecture: _mixins.scss, _placeholders.scss, _variables.scss... (underscore before the scss name means that it won't be compiled)
