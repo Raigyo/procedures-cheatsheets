@@ -1,3 +1,5 @@
+Notes - wip
+
 Récapitulatif des sélecteurs
 
 La sélection par la balise
