@@ -9,7 +9,7 @@
 
 
 ```markdown
-| Project: Google Analytics Overview  |  Document type: Procedure | Author: Vincent Chilot |  Last revision: 15/11/2020 |   
+| Project: Google Analytics Overview  |  Document type: Procedure | Author: Vincent Chilot |  Last revision: 15/11/2020 |
 ```
 
 
@@ -18,7 +18,7 @@ Cette procédure aide à avoir une vue d'ensemble sur l'interface de Google Anal
 
 Cette procédure est une synthèse de la formation "[Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/google-analytics-trafic/)" par Guillaume Guersan, consultant Freelance en Marketing Digital.
 
-Cette procédure s'adresse à des personnes ayant des connaissances : 
+Cette procédure s'adresse à des personnes ayant des connaissances :
 
 - en développement pour l'implémentation dans les services web
 - en marketing pour analyser les résultats et adapter des stratégies
@@ -96,21 +96,21 @@ Cette procédure s'adresse à des personnes ayant des connaissances :
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
+<a name="introduction"></a>
 ## Introduction
-
+<a name="pourquoi-utiliser-google-analytics--ga---"></a>
 ### Pourquoi utiliser Google Analytics (GA) ?
 
 - Suivre l'évolution de sa stratégie d'acquisition de trafic: d'où viennent les utilisateur, par quel canal...
 - Comprendre qui sont nos visiteurs, leur comportement: est-ce que les cibles sont les bonnes, doit-on ajuster la stratégie...
 - Améliorer le taux de conversion (achat, génération de leads/prospects) de son site internet: d'où viennent les leads, choix des canaux de diffusion en fonction du retour sur investissement, analyser les moyens de conversion depuis un même canal (publicité, partages naturels, repartages...)
-
+<a name="xxx"></a>
 ### Pour qui est fait GA?
 
 Pour tout type d'entreprise et même toute personne voulant suivre son trafic (blog, portfolio...).
-
+<a name="cr-er-son-compte-et-int-grer-son-site"></a>
 ## Créer son compte et intégrer son site
-
+<a name="cr-er-son-compte"></a>
 ### Créer son compte
 
 Un compte Google est nécessaire: https://analytics.google.com/
@@ -118,7 +118,7 @@ Un compte Google est nécessaire: https://analytics.google.com/
 Un même compte peut permettre de tracker plusieurs sites. L'on peut ajouter des propriétés par après (une propriété = un produit: site, application mobile) .
 
 Bien veiller à sélectionner le bon fuseau horaire.
-
+<a name="int-gration-de-ga-sur-son-application-web-html"></a>
 ### Intégration de GA sur son application web HTML
 
 Dans le menu de gauche: Administration (icone engrenage)
@@ -150,7 +150,7 @@ Copier la partie encadrée sur **toutes** les pages du site web, dans la balise 
 	<!-- .... -->
   </head>
 ````
-
+<a name="int-gration-de-ga-dans-wordpress"></a>
 ### Intégration de GA dans Wordpress
 
 Peut se faire facilement via une extension.
@@ -172,7 +172,7 @@ Suivre les instructions de l'assistant.
 Il faut le lier au compte Google sur lequel a été créé la propriété.
 
 Pour des raisons évidentes, le plugin ne fonctionnera pas en local. Certaines fonctionnalités avancées sont payantes.
-
+<a name="int-gration-de-ga-dans-drupal"></a>
 ### Intégration de GA dans Drupal
 
 Dans l'interface d'admin de Drupal, allez sur Extensions / Extend => Ajouter nouvelle extension (module).
@@ -220,7 +220,7 @@ En bas de la page à gauche, cliquer sur 'Sauver la configuration'.
 Dans admin/config/development/performance, il faudra nettoyer le chahe puis sauver.
 
 ![capture](_readme-img/googleAnalytics/capture-14.png)
-
+<a name="int-gration-de-ga-sur-prestashop"></a>
 ### Intégration de GA sur Prestashop
 
 Installer le module officiel: modules/modules et services => catalogue de modules => rechercher 'googleAnalytics" => installer
@@ -246,7 +246,7 @@ Et copier l'identifiant dans la case "ID de tracking Google Analytics".
 ![capture](_readme-img/googleAnalytics/capture-07.png)
 
 Il est recommandé de sélectionner de **rendre les adresses IP anonymes** pour rester en règles avec la GDPR.
-
+<a name="int-gration-de-ga-sur-shopify"></a>
 ### Intégration de GA sur Shopify
 
 Se rendre dans GA et:
@@ -264,7 +264,7 @@ Dans Shopify aller dans Boutique en ligne => Préférences.
 Scroller jusqu'à 'Google Analytics' puis dans le champ 'Compte Google Analytics', copier le code provenant du site GA, puis cliquer sur enregistrer.
 
 ![capture](_readme-img/googleAnalytics/capture-08.png)
-
+<a name="v-rifier-que-ga-est-bien-install-"></a>
 ### Vérifier que GA est bien installé
 
 Il est nécessaire d'utiliser un autre appareil pour se connecter au site que celui qui est utilisé pour consulter GA, par exemple un smartphone.
@@ -278,12 +278,12 @@ Si tout a bien fonctionné, l'on peut apercevoir notre connexion dans la rubriqu
 Si ce n'est pas le cas revoir les procédures d'intégration afin d'identifier ce qui n'a pas fonctionné.
 
 Egalement il est utile de vérifier que toutes les pages du site qu'on veut auditer sont bien prises en compte.
-
+<a name="lier-ga---d-autres-comptes"></a>
 ## Lier GA à d'autres comptes
-
+<a name="google-search-console"></a>
 ### Google Search Console
-
-#### Créer un compte 
+<a name="cr-er-un-compte"></a>
+#### Créer un compte
 
 Par défaut GA mesure le trafic sur le site. La google search console va permettre de suivre le trafic en provenance du moteur de recherche Google.
 
@@ -293,7 +293,7 @@ Pour des raisons de facilité, il est préférable que le compte Google utilisé
 
 Il est possible de créer une configuration pour tout un domaine.
 
-Dans le cas du suivi d'un seul site, privilégier la seconde option, via préfixe de l'url. Il suffit d'introduite l'url du site à auditer. 
+Dans le cas du suivi d'un seul site, privilégier la seconde option, via préfixe de l'url. Il suffit d'introduite l'url du site à auditer.
 
 Ne pas oublier le 's' du 'https'. Car l'outil ne va pas convertir.
 
@@ -310,7 +310,7 @@ Cliquer sur valider la propriété.
 Si le site est différent, il sera proposé d'insérer à nouveau du code sur chaque page afin de vérifier que la personne souscrivant au service est bien le propriétaire du site (comme pour GA). Les deux services peuvent être utilisés indépendamment.
 
 Au début il n'y aura aucune données et il faudra attendre quelques jours avant de les voir apparaitre.
-
+<a name="lier-ga---google-search-console"></a>
 #### Lier GA à Google Search Console
 
 Le service ne sera pas lié automatiquement même s'il a été créé avec le même compte.
@@ -348,9 +348,9 @@ Pour vérifier et faire le suivi, depuis le dashboard: Acquisition / Search Cons
 ![capture](_readme-img/googleAnalytics/capture-22.png)
 
 Au début il n'y aura aucune données et il faudra attendre quelques jours avant de les voir apparaitre.
-
+<a name="google-ads"></a>
 ### Google Ads
-
+<a name="lier-ga---google-ads"></a>
 #### Lier GA à Google Ads
 
 Aller dans Acquisition / Google Ads / Campagnes, puis 'associer vos comptes'.
@@ -366,7 +366,7 @@ Créer un nom pour l'association, activer 'Toutes les données du site web'.
 Puis 'Associer les comptes'. Cela prendra 24h avant d'être activé.
 
 ![capture](_readme-img/googleAnalytics/capture-26.png)
-
+<a name="donner-l-acc-s---d-autres-utilisateurs"></a>
 ### Donner l'accès à d'autres utilisateurs
 
 Permet de donner des accès au compte GA à un collaborateur, un associé, un client, un prestataire...
@@ -397,26 +397,26 @@ Ensuite, on peut affiner les droits.
 Lorsque l'on donne les droits à un utilisateur, ne pas oublier de supprimer cet utilisateur si celui-ci n'est pas plus habilité à accéder aux données (fin de contrat, départ de collaborateur...).
 
 ![capture](_readme-img/googleAnalytics/capture-30.png)
-
+<a name="comment-analyser-les-donn-es-"></a>
 ## Comment analyser les données?
-
+<a name="quelles-sont-les-types-de-donn-es-qu-il-est-possible-d-analyser-"></a>
 ### Quelles sont les types de données qu'il est possible d'analyser?
 
 - L'audience: quel est le profil de nos visiteurs?
 - Comparer les différents canaux d'acquisition de trafic
 - Analyser le comportement pour améliorer l'expérience utilisateur
-
+<a name="glossaire-et-d-finitions"></a>
 ### Glossaire et définitions
 
 **KPI (Key Performance Indicator)** : Pour savoir si votre site fonctionne bien, il est nécessaire de faire plus que simplement surveiller vos ventes. D’autres paramètres, appelés KPI (*fr*: indicateurs clés de performance), sont aussi importants quand il s’agit d’évaluer le succès ou la performance d'un site. Disons-le haut et fort : il est même impossible de déterminer le succès d’une page sans utiliser ces valeurs parfaitement mesurables.
 
 Mais chaque paramètre doit-il être pris en compte de manière très détaillée ? Il n’y a pas de réponse universelle à cela. Les KPI à surveiller sont aussi dépendants de l’objectif de votre site. GA propose des KPI prédéfinis répartis en différentes catégories : temps réel, audience, acquisition, comportement et conversions.
 
-**Engagement / taux d'engagement **: L'engagement en marketing dépend de plusieurs paramètres, il correspond à une notion qui désigne les prédispositions du consommateur à interagir avec un élément marketing ou une marque. Internet favorise grandement les interactions entre les consommateurs et les marques, on compte ainsi différentes formes d'engagements de la part des internautes. Le client potentiel peut s'engager suite à la réception d'un message publicitaire visuel, d'une newsletter, d'un e-mail, directement auprès de la marque ou via les réseaux sociaux par exemple. Les professionnels mesurent ensuite le taux d'engagement. On peut considérer qu'il existe plusieurs niveaux d'engagement : l'engagement simple, qui dénote un intérêt pour une marque, l'engagement pour l'achat, qui entraîne le consommateur à se renseigner davantage sur un produit spécifique et l'engagement viral qui concerne les consommateurs satisfaits, communiquant volontiers sur leurs marques favorites. L'engagement permet à la fois de fidéliser la clientèle, d'accroître la notoriété et d'échanger plus facilement avec les consommateurs.
+**Engagement / taux d'engagement**: L'engagement en marketing dépend de plusieurs paramètres, il correspond à une notion qui désigne les prédispositions du consommateur à interagir avec un élément marketing ou une marque. Internet favorise grandement les interactions entre les consommateurs et les marques, on compte ainsi différentes formes d'engagements de la part des internautes. Le client potentiel peut s'engager suite à la réception d'un message publicitaire visuel, d'une newsletter, d'un e-mail, directement auprès de la marque ou via les réseaux sociaux par exemple. Les professionnels mesurent ensuite le taux d'engagement. On peut considérer qu'il existe plusieurs niveaux d'engagement : l'engagement simple, qui dénote un intérêt pour une marque, l'engagement pour l'achat, qui entraîne le consommateur à se renseigner davantage sur un produit spécifique et l'engagement viral qui concerne les consommateurs satisfaits, communiquant volontiers sur leurs marques favorites. L'engagement permet à la fois de fidéliser la clientèle, d'accroître la notoriété et d'échanger plus facilement avec les consommateurs.
 
-**Session **: une session représente la visite d'un internaute (utilisateur) sur votre site web. La session englobe toutes l'activité que l'internaute effectue sur notre site et cette activité est limitée dans le temps. Après 30 minutes d'inactivité, la session prend fin. Si l'utilisateur reprend son activité après ces 30 minutes, cela sera considéré comme une seconde session. Un utilisateur peut donc avoir plusieurs sessions.
+**Session**: une session représente la visite d'un internaute (utilisateur) sur votre site web. La session englobe toutes l'activité que l'internaute effectue sur notre site et cette activité est limitée dans le temps. Après 30 minutes d'inactivité, la session prend fin. Si l'utilisateur reprend son activité après ces 30 minutes, cela sera considéré comme une seconde session. Un utilisateur peut donc avoir plusieurs sessions.
 
-**Utilisateur **: un utilisateur est un internaute qui utilise notre site web. Ce dernier peut être assimilé à plusieurs sessions s'il a été inactif plus de 30 minutes. Un utilisateurs utilisant des appareils différents pour se connecter au site sera considéré comme plusieurs utilisateurs différents.
+**Utilisateur**: un utilisateur est un internaute qui utilise notre site web. Ce dernier peut être assimilé à plusieurs sessions s'il a été inactif plus de 30 minutes. Un utilisateurs utilisant des appareils différents pour se connecter au site sera considéré comme plusieurs utilisateurs différents.
 
 **Page vue** : une page vue représente le nombre de fouis qu'un visiteur a vu une page spécifique. Cela ne veut pas dire qu'il a vu toute la page ou qu'il l'a considérée avec intérêt, mais qu'elle a été générée dans le navigateur. Ainsi le nombre de pages vues représentera le nombre total de pages consultées sur notre site web. Si une même page est vue deux fois, cela sera considéré comme deux pages vues.
 
@@ -424,7 +424,7 @@ Mais chaque paramètre doit-il être pris en compte de manière très détaillé
 
 **Durée moyenne des sessions** : une session représente la période pendant laquelle un utilisateur est actif sur un site web. Ainsi la durée moyenne des sessions donne une idée du temps passé par session en moyenne sur notre site web. Permet de mesurer le taux d'engagement (engagement Rate).
 
-**% de nouvelles sessions **: le pourcentage de nouvelles sessions représente le pourcentage des nouvelles visites sur notre site, des utilisateurs qui le consultent pour la première fois. De cette manière l'on peut déterminer si l'on attire des utilisateurs qui visitent notre site web pour la première fois ou, si à l'inverse l'on attire des utilisateurs qui ont déjà visité notre site et y reviennent.
+**% de nouvelles sessions**: le pourcentage de nouvelles sessions représente le pourcentage des nouvelles visites sur notre site, des utilisateurs qui le consultent pour la première fois. De cette manière l'on peut déterminer si l'on attire des utilisateurs qui visitent notre site web pour la première fois ou, si à l'inverse l'on attire des utilisateurs qui ont déjà visité notre site et y reviennent.
 
 **Taux de rebond** :  le taux de rebond représente le pourcentage de visites pendant lesquelles l'utilisateur a quitté le site web dès sa page d'arrivée, sans même interagir avec la page en question (bien que l'utilisateur ait peut-être lu toute la page). Ce n'est pas alarmant car il est normal qu'un utilisateur constate qu'il n'est pas sur un site qui correspond à sa recherche et s'en aille. Cependant si un taux de rebond est élevé, c'est préoccupant. Cela signifie que la page en question pourrait peut-être être améliorée ou encore, que la campagne qui a mené l'utilisateur sur cette page n'était pas assez claire.
 
@@ -452,13 +452,13 @@ Mais chaque paramètre doit-il être pris en compte de manière très détaillé
 
 **RGPD / GDPR** : La nouvelle législation européenne RGPD a pour vocation de mieux protéger la vie privée et la confidentialité des citoyens. RGPD signifie Règlement général sur la protection des données et en anglais GDPR pour European General Data Protection Regulation.
 
-Le but est de renforcer la protection de la vie privée du citoyen en édictant des règles uniformes à l'échelle de l'Union européenne : 
+Le but est de renforcer la protection de la vie privée du citoyen en édictant des règles uniformes à l'échelle de l'Union européenne :
 
 - le citoyen dispose d'un meilleur contrôle sur l'utilisation de ses données personnelles
 - le RGPD instaure un cadre légal clair, afin que les entreprises sachent comment s'y prendre pour garantir la confidentialité
 
 Toutes les organisations, les entreprises et les instances publiques qui collectent et traitent les données personnelles de citoyens européens doivent appliquer le RGPD, quel que soit leur pays d'implantation.
-
+<a name="comment-analyser-les-donn-es-en-fonction-d-une-p-riode-donn-e-"></a>
 ### Comment analyser les données en fonction d'une période donnée?
 
 Lorsqu'on analyse nos données, c'est pour une plage de dates. Il y a toujours une date de début d'analyse et une date d'analyse.
@@ -474,13 +474,13 @@ L'on peu ensuite affinner en affichant le graphe par heures / jours / semaines /
 ![capture](_readme-img/googleAnalytics/capture-32.png)
 
 
-
+<a name="analyser-l-audience-et-acqu-rir-de-nouveaux-clients"></a>
 ## Analyser l'audience et acquérir de nouveaux clients
 
 ![capture](_readme-img/googleAnalytics/capture-33.png)
 
 
-
+<a name="la-vue-d-ensemble-de-notre-audience"></a>
 ### La vue d'ensemble de notre audience
 
 C'est le rapport par défaut de l'audience reçue par rapport à une plage donnée.
@@ -498,7 +498,7 @@ En dessous du graphe se trouvent des données chiffrées. Un rappel des notions 
 D'autres données sont aussi disponible dans la vue d'ensemble, comme les données démographiques, des informations sur le système utilisé par le visiteur et des informations relative au mobile s'il utilise ce type de système.
 
 ![capture](_readme-img/googleAnalytics/capture-36.png)
-
+<a name="analyser-les-donn-es-d-mographiques"></a>
 ### Analyser les données démographiques
 
 L'onglet avec les données démographiques permet accéder aux données d'âge et de sexe des visiteurs.
@@ -508,24 +508,24 @@ Il faut l'activer. A noter qu'il est important de mettre à jour les conditions 
 ![capture](_readme-img/googleAnalytics/capture-37.png)
 
 
-
+<a name="age-et-sexe"></a>
 #### Age et sexe
 
 Cela permet de voir le public qui visite le site correspond bien au public ciblé.
 
 ![capture](_readme-img/googleAnalytics/capture-38.png)
-
+<a name="analyser-les-donn-es-g-ographiques"></a>
 ### Analyser les données géographiques
 
 L'on peut recueillir les données linguistiques et la zone géographique des visiteurs.
-
+<a name="donn-es-linguistiques"></a>
 #### Données linguistiques
 
 Les données linguistiques correspondent à la langue d'installation du système d'exploitation du visiteur.
 
 Les données ne sont donc pas toujours représentatives car un visiteur peut être par exemple francone mais utiliser un système dans une autre langue (expatrié, depuis une société internationnale où tous les systèmes d'exploitations sont en anglais).
 
-Egalement ces données peuvent attirer l'attention sur certaines annomalies, par exemple de nombreuses visites dans une langues qui ne correspond pas du tout à celle du site, il peut s'agir de bots, des logiciels opérant de manière autonomes et automatiques pa avec de mauvaises intentions (vols de données).  
+Egalement ces données peuvent attirer l'attention sur certaines annomalies, par exemple de nombreuses visites dans une langues qui ne correspond pas du tout à celle du site, il peut s'agir de bots, des logiciels opérant de manière autonomes et automatiques pa avec de mauvaises intentions (vols de données).
 
 Les données linguistiques doivent donc être recoupées avec les données de la zone géographique.
 
@@ -538,7 +538,7 @@ Concernant les codes ISO, il s'agit de la langue puis du pays, par exemple:
 - en-us: anglais des USA
 
 ![capture](_readme-img/googleAnalytics/capture-39.png)
-
+<a name="donn-es-de-la-zone-g-ographique"></a>
 #### Données de la zone géographique
 
 Les données de la zone géographique permettent d'afficher la provenance des visiteurs.
@@ -556,9 +556,9 @@ L'on peu affiner avec d'autres critères faisant partie de la dimension secondai
 Exemple de données affichées par ville et si oui ou non, la visite provient d'un appareil mobile.
 
 ![capture](_readme-img/googleAnalytics/capture-41.png)
-
+<a name="engagement-des-visiteurs"></a>
 ### Engagement des visiteurs
-
+<a name="visiteurs-nouveaux---connu"></a>
 #### Visiteurs nouveaux / connus
 
 L'étude des comportements permet de visualiser les visiteurs qui sont nouveaux sur le site et ceux qui sont déjà venus.
@@ -566,8 +566,8 @@ L'étude des comportements permet de visualiser les visiteurs qui sont nouveaux 
 Dans les sites d'e-commerce il est important d'avoir un nombre élevé de 'returning visitors'. dans le cas de la générations de 'leads' c'est l'inverse, il est bon d'avoir beaucoup de nouveaux venus.
 
 ![capture](_readme-img/googleAnalytics/capture-42.png)
-
-#### Fréquence et récence 
+<a name="fr-quence-et-r-cence"></a>
+#### Fréquence et récence
 
 La section fréquence et récence permet de voir le nombre de sessions faites par des utilisateurs et leur récurrence ainsi que le nombre de pages totales visitées (les visites répétées d'un internaute sur une même page sont prises en compte).
 
@@ -576,9 +576,9 @@ Dans l'exemple suivant, 44 utilisateurs n'ont fait qu'une seule session (visite)
 Mais 5 utilisateurs ont fait entre 9 et 14 sessions.
 
 ![capture](_readme-img/googleAnalytics/capture-43.png)
-
+<a name="engagement"></a>
 #### Engagement
-
+<a name="segment-de-dur-e-de-la-session"></a>
 ##### Segment de durée de la session
 
 L'engagement via 'Segment de durée de la session' permet de voir la durée des différentes sessions et le nombre total de pages vues en fonction des durées.
@@ -588,7 +588,7 @@ Dans l'exemple suivant, 23 sessions ont duré 0 à 10 secondes pour un total de 
 Mais, 9 session ont duré plus de 1801 secondes pour un total de 702 pages vues.
 
 ![capture](_readme-img/googleAnalytics/capture-44.png)
-
+<a name="nombre-de-pages"></a>
 ##### Nombre de pages
 
 Il s'agit du nombre de pages vues en fonction des sessions.
@@ -600,9 +600,9 @@ Mais, 9 visiteurs ont vu plus de 20 pages, pour un total de pages vues égal à 
 ![capture](_readme-img/googleAnalytics/capture-45.png)
 
 A noter que si la première entrée indique "<1", il s'agit des visiteurs ayant quitté le site avant qu'il soit chargé (parce qu'ils se rendent compte qu'ils se sont trompés, parce que le site est trop lent à charger...). Si le nombre est anormalement élevé il faut en rechercher la cause (par exemple est-ce que le site ne connait pas un problème avec son serveur d'hébergement).
-
+<a name="technologie-utilis-e-par-les-visiteurs"></a>
 ### Technologie utilisée par les visiteurs
-
+<a name="navigateurs-et-os"></a>
 #### Navigateurs et OS
 
 Permet de voir quels systèmes les visiteurs utilisent et d'afficher des données techniques: navigateur, système d'exploitation, résolution d'écran, couleurs d'écran...
@@ -610,7 +610,7 @@ Permet de voir quels systèmes les visiteurs utilisent et d'afficher des donnée
 Ces données sont très importantes pour les développeurs des sites car cela permet de connaître les configurations les plus utilisées et d'adapter leur technologies et leur test pour s'assurer que tout fonctionnera correct dans ces configurations.
 
 ![capture](_readme-img/googleAnalytics/capture-46.png)
-
+<a name="r-seau"></a>
 #### Réseau
 
 Affichait à l'origine les nom du provider du visiteur, voire le nom de l'entreprise d'où provenait la connexion.
@@ -618,7 +618,7 @@ Affichait à l'origine les nom du provider du visiteur, voire le nom de l'entrep
 Cela est désactivé (not-set), pour rester en concordance avec la GDPR.
 
 ![capture](_readme-img/googleAnalytics/capture-47.png)
-
+<a name="appareils-utilis-s-par-nos-visiteurs"></a>
 ### Appareils utilisés par nos visiteurs
 
 Cela permet de voir depuis quel type d'appareil l'utilisateur provient.
@@ -638,9 +638,9 @@ Ces données sont très utiles pour les développeurs également car cela permet
 ![capture](_readme-img/googleAnalytics/capture-49.png)
 
 
-
+<a name="comparer-les-diff-rents-canaux-d-acquisition-de-trafic"></a>
 ## Comparer les différents canaux d'acquisition de trafic
-
+<a name="vue-d-ensemble-des-canaux-d-acquisition"></a>
 ### Vue d'ensemble des canaux d'acquisition
 
 Comment arrive notre audience sur notre site?
@@ -660,7 +660,7 @@ Il faut donc tâcher de ne pas dépasser les 50% pour la recherche organique et 
 
 
 ![capture](_readme-img/googleAnalytics/capture-50.png)
-
+<a name="impact-des-r-seaux-sociaux-sur-notre-trafic"></a>
 ### Impact des réseaux sociaux sur notre trafic
 
 Dans la sections "Canaux" sont affichés les canaux d'acquisition par types:
@@ -674,7 +674,7 @@ A noter que GA n'affichera que les canaux qui ont été utilisés lors de la pé
 On peut voir par exemple dans "Social" les différents médias sociaux et évaluer l'impact et l'efficacité des différentes campagnes organisées sur ceux-ci.
 
 ![capture](_readme-img/googleAnalytics/capture-52.png)
-
+<a name="o--en-est-notre-optimisation-de-notre-r-f-rencement-naturel--seo--"></a>
 ### Où en est notre optimisation de notre référencement naturel (SEO)?
 
 ![capture](_readme-img/googleAnalytics/capture-53.png)
@@ -693,7 +693,7 @@ On pourra y trouver les nombre de fois où le site a été affiché dans google 
 
 - Impressions: le nombre de fois que le site est apparu dans Google suite à une recherche (mais sans qu'il y ait nécessairement de click)
 - CRT: Taux de clics = Clics/Impressions * 100.
-- Position moyenne: Il s'agit du classement moyen des URL du site pour les requêtes. 
+- Position moyenne: Il s'agit du classement moyen des URL du site pour les requêtes.
 
 ![capture](_readme-img/googleAnalytics/capture-55.png)
 
@@ -702,7 +702,7 @@ On peut avoir aussi le détail par pages du site dans la rubrique "Pages de dest
 ![capture](_readme-img/googleAnalytics/capture-56.png)
 
 
-
+<a name="quels-sites-nous-am-nent-du-trafic-"></a>
 ### Quels sites nous amènent du trafic?
 
 ![capture](_readme-img/googleAnalytics/capture-57.png)
@@ -712,7 +712,7 @@ Cela permet de voir quels sont les sites qui proposent un lien vers notre site.
 Cela peut être utile pour créer des campagnes et des partenariats avec les sites qui ont des visiteurs qui pourraient également être intéressés par nos services.
 
 ![capture](_readme-img/googleAnalytics/capture-58.png)
-
+<a name="liens-directs"></a>
 ### Liens directs
 
 ![capture](_readme-img/googleAnalytics/capture-59.png)
@@ -720,15 +720,15 @@ Cela peut être utile pour créer des campagnes et des partenariats avec les sit
 Il s'agit des utilisateurs qui ont directement tapé l'url dans la barre de recherche ou qui ont mis le site en favoris.
 
 Ces données sont plus difficiles à analyser et il faut les recouper avec d'autres informations. Par exemple pour un site de commerce en ligne, peut-être que les visiteurs sont des habituées et on l'adresse du site en favori.
-
+<a name="analyser-l-impact-des-campagnes-publicitaires-avec-google-ads"></a>
 ### Analyser l'impact des campagnes publicitaires avec Google Ads
 
 Permet de vérifier l'efficacité des campagnes Google Ads et d'ajuster sa stratégie en fonction de sa rentabilité en terme d'acquisitions.
 
 ![capture](_readme-img/googleAnalytics/capture-60.png)
-
+<a name="analyser-le-comportement-pour-am-liorer-l-exp-rience-utilisateur"></a>
 ## Analyser le comportement pour améliorer l'expérience utilisateur
-
+<a name="contenu-du-site---quelles-sont-les-pages-les-plus-populaires"></a>
 ### Contenu du site : quelles sont les pages les plus populaires
 
 Il est possible ans la rubrique "comportement" d'afficher des statistiques pour les pages les plus populaires du site.
@@ -746,7 +746,7 @@ Et les pages de sortie les pages depuis lesquelles les utilisateurs ont quitté 
 Cela peut être un indicateur des pages dont le contenu devrait peut-être être amélioré.
 
 ![capture](_readme-img/googleAnalytics/capture-63.png)
-
+<a name="vitesse-du-site---comprendre-quelles-sont-les-pages-lentes-de-notre-site"></a>
 ### Vitesse du site : comprendre quelles sont les pages lentes de notre site
 
 **Il est très important de veiller à la rapidité d'affichage d'un site et de toutes ses pages car c'est très important pour le taux de conversion et pour le SEO.**
@@ -808,7 +808,7 @@ ga('send', {
 ```
 
 **Pour les développeurs** : pour des données plus précises et plus adaptées à l'optimisation des pages - notamment la vitesse de chargement, les développeurs utiliseront des outils comme [Lighthouse](https://developers.google.com/web/tools/lighthouse) (extension du navigateur) ou accéderont directement à [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=fr) afin d'optimiser les pages du site lors du développement.
-
+<a name="site-search---trouver-des-opportunit-s-avec-notre-moteur-de-recherche-interne"></a>
 ### Site Search : trouver des opportunités avec notre moteur de recherche interne
 
 Cette rubrique concerne les sites ayant un **moteur de recherche interne**. Cette fonctionnalité est indispensable sur les sites de commerce en ligne par exemple.
@@ -828,7 +828,7 @@ Dans la partie "termes de recherche", l'on aura une liste des termes utilisés p
 Très utile par exemple dans le cadre d'une boutique en ligne pour commander des produits que l'on n'aurait pas en catalogue mais qui seraient recherchés par les visiteurs. Cela peut aussi donner des idées d'ajout de contenu, par exemple sur un site institutionnel, de services ou une encyclopédie en ligne, s'il n'y a pas de rubrique correspondant aux questions / recherches des utilisateurs.
 
 ![capture](_readme-img/googleAnalytics/capture-71.png)
-
+<a name="-v-nements---analyser-les-actions-de-nos-visiteurs"></a>
 ### Évènements : analyser les actions de nos visiteurs
 
 Dans cette rubrique l'on peut faire un suivi de tous les événements que l'on a créés, par exemple : ajout d'un produits dans le panier, remplir un formulaire, télécharger un document...
@@ -848,7 +848,7 @@ L'entrée "pages" permet de voir depuis quelles pages ont été générés les �
 ![capture](_readme-img/googleAnalytics/capture-73-2.png)
 
 
-
+<a name="flux-de-comportement---analyser-le-parcours-de-nos-visiteurs"></a>
 ### Flux de comportement : analyser le parcours de nos visiteurs
 
 Il s'agit, toujours pour une période donnée, d'une représentation graphique du parcours des visiteurs sur notre site.
@@ -858,9 +858,9 @@ Cela permet de comprendre comment ils sont arrivés sur notre site, comment ils 
 
 
 ![capture](_readme-img/googleAnalytics/capture-74.png)
-
+<a name="tableau-de-bord-et-rapports-email"></a>
 ## Tableau de bord et rapports email
-
+<a name="cr-er-un-tableau-de-bord"></a>
 ### Créer un tableau de bord
 
 Plutôt que d'avoir le tableau de bord par défaut, il est possible de personnaliser son propre tableau de bord avec les données souhaitées.
@@ -888,7 +888,7 @@ Pour les statistiques :
 - Diagrammes (camemberts)
 - Barres
 
-Pour les données en temps réel (utile pour les très gros sites) 
+Pour les données en temps réel (utile pour les très gros sites)
 
 - Compteur
 - Ligne du temps
@@ -946,7 +946,7 @@ Il est possible de déplacer les cartes sur le dashboard en cliquant au dessus d
 L'on peut aussi choisir une disposition préconfigurée en sélectionnant "Personnaliser le tableau de bord".
 
 ![capture](_readme-img/googleAnalytics/capture-83.png)
-
+<a name="comparer-les-donn-es-entre-deux-p-riodes"></a>
 ### Comparer les données entre deux périodes
 
 Par défaut les vues affichent une période donnée.
@@ -962,7 +962,7 @@ Cela permet de comparer les données en fonction des mois, de certaines période
 ![capture](_readme-img/googleAnalytics/capture-88.png)
 
 
-
+<a name="envoyer-des-rapports-par-email"></a>
 ### Envoyer des rapports par email
 
 Il est possible d'**enregistrer** les rapports dans l'interface en leur donnant un nom :
@@ -977,21 +977,21 @@ Les rapports peuvent être **exportés** dans différents formats :
 
 ![capture](_readme-img/googleAnalytics/capture-90.png)
 
-Ou partagés par email : 
+Ou partagés par email :
 
 ![capture](_readme-img/googleAnalytics/capture-92.png)
 
 On peut choisir la fréquence d'envoi automatique, le jour de l'envoi, le format (pdf, excel)...
 
 On peut programmer l'envoi depuis n'importe quelle vue, y compris depuis le tableau de bord personnalisé, ce qui permet d'envoyer des données qui ont été sélectionnées pour leur représentativité, aux collègues, management, clients...
-
+<a name="suivi-d--v-nements--objectifs-et-taux-de-conversion"></a>
 ## Suivi d'événements, objectifs et taux de conversion
-
+<a name="la-notion-d--v-nement"></a>
 ### La notion d'événement
 
 Les événements sont toutes les actions de l'utilisateur pouvant être trackés.
 
-Un code pour tracker un événement requiert une série de données : 
+Un code pour tracker un événement requiert une série de données :
 
 - Catégorie (obligatoire) est le nom que vous donnez à un groupe d'objets que vous souhaitez suivre.
 - Action (obligatoire) est le type d'interaction, comme le téléchargement d'un document, un formulaire complété...
@@ -1013,7 +1013,7 @@ En pratique (exemple) :
 Pour les CMS (Prestashop, Wordpress...) il existe des extensions permettant d'effectuer le suivi.
 
 
-
+<a name="v-rifier-qu-un--v-nement-est-bien-suivi"></a>
 ### Vérifier qu'un événement est bien suivi
 
 Pour vérifier qu'un événement est bien pris en compte, aller dans "temps réel" / "événements".
@@ -1023,7 +1023,7 @@ On peut y voir les actions et leurs libellés.  s'assurer que tous les trackings
 ![capture](_readme-img/googleAnalytics/capture-93.png)
 
 
-
+<a name="param-trer-des-objectifs-pour-suivre-son-taux-de-conversion"></a>
 ### Paramétrer des objectifs pour suivre son taux de conversion
 
 Les événements crées vont servir à configurer des objectifs qui permettront de calculer le taux de conversion de notre site.
@@ -1071,7 +1071,7 @@ Libellé = event_label soit : open-mailbox
 ![capture](_readme-img/googleAnalytics/capture-98.png)
 
 
-
+<a name="analyse-des-conversions"></a>
 ### Analyse des conversions
 
 Dans cette rubrique il est possible de visualiser les différentes conversion en fonction des objectifs définis et ce que ces conversions ont potentiellement rapporté.
@@ -1109,7 +1109,7 @@ Créer cet entonnoir vous permet de savoir combien de personnes abandonnent chaq
 Note: Les entonnoirs de conversion ne fonctionnent vraiment **que lorsque vous demandez à vos visiteurs de parcourir une série de pages précises et que ceux-ci sont bien guidés**. Sauf indication contraire, les visiteurs suivent rarement un chemin clair sur votre site et un entonnoir de conversion ne vous aidera pas à comprendre comment vos visiteurs se déplacent d'une page à l'autre. Pour les chemins avec moins de structure, utilisez le rapport "**Flux de comportements**".
 
 
-
+<a name="liens-utiles---sources"></a>
 ## Liens utiles / sources
 
 - [Formation Udemy: Tout comprendre de Google Analytics et analyser son trafic !](https://www.udemy.com/course/google-analytics-trafic/)
@@ -1121,7 +1121,7 @@ Note: Les entonnoirs de conversion ne fonctionnent vraiment **que lorsque vous d
 - [Définitions marketing](https://www.definitions-marketing.com/)
 - [anthedesign](https://www.anthedesign.fr/)
 - [Qu’est-ce qu’un funnel de conversion ?](https://www.ideagency.fr/blog/entonnoir-conversion)
-- [Comment configurer vos objectifs dans Google Analytics](https://digitad.ca/creer-objectif-google-analytics/) 
+- [Comment configurer vos objectifs dans Google Analytics](https://digitad.ca/creer-objectif-google-analytics/)
 - [Lighthouse | Tools for Web Developers | Google Developers](https://developers.google.com/web/tools/lighthouse)
 - [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/?hl=fr)
 - [Google Analytics - analytics.js - Site Speed Sample Rate](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#siteSpeedSampleRate)
