@@ -123,6 +123,8 @@ no need to change it in each classes, but you just need to do it once!
 
 ### Nesting
 
+Group datas following DOM.
+
 Exemple css:
 
 ```
@@ -152,6 +154,8 @@ footer {
 => with sass you can group datas by stacking selectors using nesting
 
 => factorise
+
+=> don't abuse of nesting
 
 ### Current Selector '&' (= parent name )
 
@@ -218,7 +222,7 @@ body {
 Of course we have to import it after the variables declaration
 so you could use variable in the children SCSS...
 
-### Inheritance and bloc of properties
+### Inheritance and bloc of properties / Placeholders
 
 We can declare a *bloc of properties* using Sass. For that we use '%'.
 
@@ -689,7 +693,34 @@ Will render in CSS:
 }
 ```
 
+## Tips / mistakes to avoid
 
+- Use modules and structure sass architecture: _mixins.scss, _placeholders.scss, _variables.scss... (underscore before the scss name means that it won't be compiled)
+
+- Import the modules in 'style.scss' using:
+
+  ````scss
+  @import './variables';
+  @import './mixins';
+  @import './placeholders';
+  ````
+
+- Import 'css' file and not 'scss' file in HTML file.
+
+- Watch the main 'style.scss' using:
+
+  ````
+  sass --watch scss/style.scss styles/style.css
+  ````
+
+- Use clear names for variables, use sections in your scss files.
+
+- Use mixins (`@mixin`) with parameters only otherwise use inheritance / placeholders (` %placeholder `): placeholers are better formated (dry) because in 'css' file. all the selectors that have the same values are regrouped.
+
+- Nesting is a usefull feature but don't abuse! It can make the code unreadable. 
+
+  - Don't use it further than 3 nests. 
+  - Don't use it if you don't really need it
 
 ## Useful links
 
@@ -698,3 +729,4 @@ Will render in CSS:
 - [SASS Built-In Modules](https://sass-lang.com/documentation/modules)
 - [CSS with superpowers](https://marksheet.io/sass.html)
 - [Loops in CSS Preprocessors](https://css-tricks.com/loops-css-preprocessors/)
+- [Les erreurs de débutant avec SASS/SCSS](https://www.youtube.com/watch?v=DtgJrNb5qno)
